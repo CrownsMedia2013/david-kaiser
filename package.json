@@ -21,6 +21,7 @@
     "@iconify/utils": "^2.1.4",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/vercel-builder": "^0.24.0",
+    "@prismicio/client": "5.2.0",
     "esm": "^3.2.25",
     "flag-icons": "^6.6.6",
     "jquery": "^3.7.0",
