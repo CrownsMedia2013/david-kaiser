@@ -37,7 +37,7 @@ export default async () => {
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
-      '@nuxt/image',
+      '@nuxt/image'
       //'@nuxt/postcss8'
     ],
 
@@ -66,7 +66,7 @@ export default async () => {
       extend(config, { loaders: { less } }) {
         less.lessOptions = { 
           plugins: [ 
-            new lessPluginFunctions(),
+            new lessPluginFunctions()
           ]
         }
       }
@@ -74,7 +74,7 @@ export default async () => {
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
-      '@/assets/style.less',
+      '@/assets/style.less'
       /*'@fontsource/inter/400.css',
       '@fontsource/inter/600.css',
       '@fontsource/libre-baskerville/400.css',
@@ -103,13 +103,13 @@ export default async () => {
       { src: '~/plugins/DocumentLink' },
       { src: '~/plugins/uikit', ssr: false },
       { src: '~/plugins/client-fixes', ssr: false },
-      { src: '~/plugins/scroll.js', ssr: false },
+      { src: '~/plugins/scroll.js', ssr: false }
     ],
 
     prismic: {
       endpoint: sm.apiEndpoint,
       modern: true,
-      linkResolver: '~/plugins/link-resolver',
+      linkResolver: '~/plugins/link-resolver'
     },
 
     // Set nuxt image provider
@@ -118,7 +118,7 @@ export default async () => {
       providers: {
         imgproxy: {
           name: 'imgproxy',
-          provider: '~/providers/imgproxy.js',
+          provider: '~/providers/imgproxy.js'
         },
       }
     },
