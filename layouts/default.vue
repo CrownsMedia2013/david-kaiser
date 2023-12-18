@@ -3,7 +3,7 @@
   <nuxt />
 </template>
 <script>
-import { SpeedInsights } from "@vercel/speed-insights/dist/vue"
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 
 export default {
   components: {
