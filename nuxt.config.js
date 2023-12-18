@@ -1,7 +1,7 @@
 import Prismic from '@prismicio/client'
 import sm from './slicemachine.config.json'
 import lessPluginFunctions from 'less-plugin-functions'
-import getRoutes from './utils/getRoutes'
+//import getRoutes from './utils/getRoutes'
 
 export default async () => {
   const client = await Prismic.getApi(sm.apiEndpoint)
@@ -123,13 +123,13 @@ export default async () => {
       }
     },
 
-    sitemap: {
-      hostname: sm.hostname,
-      path: '/sitemap.xml',
-      cacheTime: 10,
-      gzip: true,
-      exclude: [ '/preview', '**/404', '/slice-simulator' ],
-      routes: getRoutes
-    }
+    //sitemap: {
+    //  hostname: sm.hostname,
+    //  path: '/sitemap.xml',
+    //  cacheTime: 10,
+    //  gzip: true,
+    //  exclude: [ '/preview', '**/404', '/slice-simulator' ],
+    //  routes: getRoutes
+    //}
   }
 }
