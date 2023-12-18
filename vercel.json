@@ -5,7 +5,11 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": ["slicemachine.config.json", "utils/getRoutes.js", "package.json", "@prismicio/client"]
+        "serverFiles": [
+          "slicemachine.config.json", 
+          "utils/getRoutes.js", 
+          "package.json"
+        ]
       }
     }
   ]
