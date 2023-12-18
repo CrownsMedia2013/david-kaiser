@@ -1,0 +1,24 @@
+
+.tm-page-section {
+  position: relative;
+  z-index: 0;
+}
+
+.tm-page-section.tm-transparent-header {
+  padding-top: @navbar-nav-item-height;
+}
+
+.tm-page-section-divider:not(:last-child) {
+  border-bottom: 1px @global-border solid;
+}
+
+.uk-light .tm-page-section-divider,
+.uk-light.tm-page-section-divider {
+  &:not(:last-child) {
+    border-bottom: 1px @inverse-global-border solid;
+  }
+}
+
+/*.page-section .slice:first-of-type {
+  padding-top: @section-padding-vertical;
+}*/

@@ -1,0 +1,54 @@
+// default variation
+.columns-default-settings() {
+  @button-style: @default-button-style;
+}
+
+.tm-columns-default {
+  .columns-default-settings();
+  .columns-variation();
+}
+
+// with-icon variation
+.columns-with-icon-settings() {
+  .columns-default-settings();
+  @icon-scale: 1.5;
+  @icon-color: @base-heading-color;
+  @icon-margin: @base-margin-vertical;
+  @inverse-icon-color: @inverse-base-heading-color;
+}
+
+.tm-columns-with-icon {
+  .columns-with-icon-settings();
+  .columns-variation();
+
+  &-icon {
+    margin-top: @icon-margin;
+    margin-bottom: @icon-margin;
+    .modular-scale(@icon-scale);
+  }
+}
+
+// text variation
+.columns-text-settings() {
+  .columns-default-settings();
+  @button-style: text;
+}
+
+.tm-columns-text {
+  .columns-text-settings();
+  .columns-variation();
+}
+
+// variation constructor
+.columns-variation() {
+  &-button {
+    .button(@button-style);
+  }
+}
+
+// global styles
+/*@media (max-width: @breakpoint-medium-max) {
+  .tm-columns .uk-slider-items > :not(.uk-first-column)::before {
+    left: 29px;
+  }
+}*/

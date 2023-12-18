@@ -1,0 +1,138 @@
+{
+  "id": "navigation",
+  "type": "SharedSlice",
+  "name": "Navigation",
+  "description": "Navigation",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Navigation",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Title",
+            "allowTargetBlank": false,
+            "single": "heading5"
+          }
+        }
+      },
+      "items": {
+        "text": {
+          "config": {
+            "label": "Text",
+            "placeholder": "Text",
+            "allowTargetBlank": false,
+            "single": "paragraph"
+          },
+          "type": "StructuredText"
+        },
+        "link": {
+          "config": {
+            "label": "Link",
+            "placeholder": "Link",
+            "allowTargetBlank": false,
+            "select": null
+          },
+          "type": "Link"
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "icons",
+      "name": "Icons",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Navigation",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Title",
+            "allowTargetBlank": false,
+            "single": "heading5"
+          }
+        }
+      },
+      "items": {
+        "icon": {
+          "config": {
+            "label": "Icon - www.iconify.design",
+            "placeholder": "eg. la:home"
+          },
+          "type": "Text"
+        },
+        "text": {
+          "config": {
+            "label": "Text",
+            "placeholder": "Text",
+            "allowTargetBlank": false,
+            "single": "paragraph"
+          },
+          "type": "StructuredText"
+        },
+        "link": {
+          "config": {
+            "label": "Link",
+            "placeholder": "Link",
+            "allowTargetBlank": false,
+            "select": null
+          },
+          "type": "Link"
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "circledIcons",
+      "name": "Circled Icons",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Navigation",
+      "primary": {},
+      "items": {
+        "icon": {
+          "config": {
+            "label": "Icon - www.iconify.design",
+            "placeholder": "eg. la:home"
+          },
+          "type": "Text"
+        },
+        "label": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Label",
+            "placeholder": "Label",
+            "allowTargetBlank": true,
+            "single": "heading6"
+          }
+        },
+        "text": {
+          "config": {
+            "label": "Text",
+            "placeholder": "Text",
+            "allowTargetBlank": false,
+            "single": "paragraph"
+          },
+          "type": "StructuredText"
+        },
+        "link": {
+          "config": {
+            "label": "Link",
+            "placeholder": "Link",
+            "allowTargetBlank": false,
+            "select": null
+          },
+          "type": "Link"
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "page",
+  "label": "Page",
+  "status": true,
+  "format": "page",
+  "repeatable": true,
+  "json": {
+    "Page": {
+      "title": {
+        "config": {
+          "label": "Title",
+          "placeholder": "Title",
+          "allowTargetBlank": false,
+          "single": "heading1"
+        },
+        "type": "StructuredText"
+      },
+      "privateKeywords": {
+        "config": {
+          "label": "Private Keywords",
+          "placeholder": "Private Keywords"
+        },
+        "type": "Text"
+      },
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID",
+          "placeholder": "unique-identifier-eg-homepage"
+        }
+      },
+      "sections": {
+        "type": "Group",
+        "config": {
+          "label": "Sections",
+          "fields": {
+            "section": {
+              "type": "Link",
+              "config": {
+                "label": "Section",
+                "select": "document",
+                "customtypes": ["page_section"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "SEO Metadata": {
+      "metaTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "Choose a meaningful title"
+        }
+      },
+      "metaDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "Write an interesting description"
+        }
+      },
+      "socialMediaImage": {
+        "type": "Image",
+        "config": {
+          "label": "Social Media Image",
+          "constraint": { "width": 1299, "height": 630 },
+          "thumbnails": []
+        }
+      },
+      "exclude": {
+        "type": "Boolean",
+        "config": {
+          "label": "Exclude",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false
+        }
+      }
+    }
+  }
+}

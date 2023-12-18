@@ -1,0 +1,201 @@
+@footer-font-size: 14px;
+@footer-font-size-large: @global-font-size;
+@footer-top-padding: @global-large-margin;
+@footer-logo-max-width: 250px;
+@footer-column-min-width: 170px;
+@footer-column-max-width: 50%;
+@footer-single-logo-max-width: 245px;
+@footer-bottom-nav-font-size: @global-small-font-size;
+@footer-bottom-padding: @global-margin; 
+@footer-social-icons-font-size: 1.4rem;
+@footer-scroll-top-font-size: 1.2rem;
+@footer-scroll-top-size: 1.75rem;
+@footer-scroll-top-color: @global-emphasis-color;
+@footer-scroll-top-border: 1px #222 solid;
+@inverse-footer-scroll-top-color: @inverse-global-emphasis-color;
+@inverse-footer-scroll-top-border: 1px #aaa solid;
+
+.tm-footer {
+  margin-top: auto;
+  font-size: @footer-font-size;
+}
+
+@media screen and (min-width: @breakpoint-large) {
+  .tm-footer {
+    font-size: @footer-font-size-large;
+  }
+}
+
+.tm-footer-top {
+  padding-top: @footer-top-padding;
+  padding-bottom: @footer-top-padding;
+}
+
+.tm-footer-columns {
+  flex-grow: 1;
+}
+
+.tm-footer-column {
+  flex-grow: 1;
+  min-width: @footer-column-min-width;
+  max-width: @footer-column-max-width;
+}
+
+.tm-footer-nav a {
+  color: @global-color;
+}
+
+.tm-footer-nav a:hover {
+  text-decoration: none;
+  color: @global-emphasis-color;
+}
+
+.uk-light .tm-footer-nav a {
+  color: @inverse-global-color;
+}
+
+.uk-light .tm-footer-nav a:hover {
+  color: @inverse-global-emphasis-color;
+}
+
+.tm-footer-logo {
+  flex-grow: 2;
+}
+
+.tm-footer-logo img {
+  width: 100%;
+  max-width: @footer-logo-max-width;
+}
+
+@media screen and (max-width: @breakpoint-xsmall-max) {
+  .tm-footer-logo {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.tm-footer-single-logo .tm-footer-columns {
+  justify-content: center;
+}
+
+.tm-footer-single-logo .tm-footer-logo img {
+  max-width: @footer-single-logo-max-width;
+}
+
+.tm-footer-nav-circled-icons [uk-grid] {
+  flex-direction: column;
+}
+
+.tm-footer-nav-circled-icons .uk-grid-margin {
+  margin-top: @global-small-gutter;
+}
+
+.tm-footer-single-icons .tm-footer-columns {
+  flex-grow: initial;
+}
+
+.tm-footer-single-icons .tm-footer-column {
+  max-width: initial;
+}
+
+.tm-footer-single-icons .tm-footer-nav-circled-icons .uk-grid-margin {
+  margin-top: @global-gutter;
+}
+
+.tm-footer-single-icons .tm-footer-nav-circled-icons [uk-grid] {
+  flex-direction: initial;
+}
+
+@media screen and (max-width: @breakpoint-xsmall-max) {
+  .tm-footer-single-icons .tm-footer-column {
+    width: 100%;
+  }
+
+  .tm-footer-single-icons .tm-footer-nav-circled-icons {
+    width: 100%;
+  }
+
+  .tm-footer-single-icons .tm-footer-nav-circled-icons [uk-grid] {
+    justify-content: center;
+  }
+}
+
+.tm-footer-single-icons .tm-footer-columns {
+  align-items: center;
+}
+
+.tm-footer-circled-icon {
+  display: flex;
+  margin-right: @global-small-gutter;
+  min-height: line-height(2);
+  align-items: center;
+}
+
+.tm-footer .tm-icon-circle {
+  font-size: 1em;
+}
+
+.tm-footer-single-icons .tm-icon-circle {
+  font-size: 1.2em;
+}
+
+.tm-footer .tm-footer-opening-hours table {
+  margin: @global-small-margin 0;
+  table-layout: fixed;
+  width: auto;
+
+  & td {
+    white-space: pre;
+    padding: 3px;
+    padding-left: 0;
+  }
+
+  & td:first-child {
+    padding-right: 15px;
+  }
+}
+
+.tm-footer-bottom {
+  padding-top: @footer-bottom-padding;
+  padding-bottom: @footer-bottom-padding;
+}
+
+.tm-footer-bottom > .uk-grid > *:not(.uk-first-column, :first-child, :last-child) { 
+  flex-grow: 1;
+}
+
+.tm-footer-bottom > .uk-grid > *:not(.uk-first-column) {
+  margin-left: auto;
+}
+
+.tm-footer-bottom-nav {
+  font-size: @footer-bottom-nav-font-size;
+}
+
+.tm-footer-bottom-nav {
+  font-size: @footer-bottom-nav-font-size;
+}
+
+.tm-footer-bottom-nav a:hover {
+  text-decoration: none;
+}
+
+.tm-footer-social-icons {
+  font-size: @footer-social-icons-font-size;
+}
+
+.tm-footer-scroll-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: @footer-scroll-top-size;
+  height: @footer-scroll-top-size;
+  font-size: @footer-scroll-top-font-size;
+  color: @footer-scroll-top-color;
+  border: @footer-scroll-top-border;
+}
+
+.uk-light .tm-footer-scroll-top {
+  color: @inverse-footer-scroll-top-color;
+  border: @inverse-footer-scroll-top-border;
+}

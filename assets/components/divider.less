@@ -1,0 +1,24 @@
+@divider-bold-width: 55px;
+@divider-bold-border-width: 3px;
+@divider-bold-border: @base-heading-color;
+@divider-bold-small-width: 28px;
+
+@inverse-divider-bold-border: @inverse-base-heading-color;
+
+.tm-divider-bold {
+  width: @divider-bold-width;
+  border-top: @divider-bold-border-width solid @divider-bold-border;
+  margin-top: @base-margin-large-vertical;
+  margin-bottom: @base-margin-large-vertical;
+}
+
+.tm-divider-bold-small {
+  width: @divider-bold-small-width;
+  margin-bottom: @base-margin-vertical;
+  width: @divider-bold-width;
+  border-top: @divider-bold-border-width solid @divider-bold-border;
+}
+
+.uk-light .tm-divider-bold {
+  border-top: @divider-bold-border-width solid @inverse-divider-bold-border;
+}

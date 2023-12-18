@@ -1,0 +1,44 @@
+@blend-soft-dark-background: rgba(0, 0, 0, 0.18);
+@blend-default-dark-background: rgba(0, 0, 0, 0.4);
+@blend-strong-dark-background: rgba(0, 0, 0, 0.7);
+@blend-soft-light-background: rgba(255, 255, 255, 0.18);
+@blend-default-light-background: rgba(255, 255, 255, 0.4);
+@blend-strong-light-background: rgba(255, 255, 255, 0.7);
+
+.tm-background-blend > * {
+  pointer-events: initial;
+}
+
+.tm-background-blend-soft-dark {
+  background-blend-mode: darken;
+  background-color: @blend-soft-dark-background;
+}
+
+.tm-background-blend-default-dark {
+  background-blend-mode: darken;
+  background-color: @blend-default-dark-background;
+}
+
+.tm-background-blend-strong-dark {
+  background-blend-mode: darken;
+  background-color: @blend-strong-dark-background;
+}
+
+.tm-background-blend-soft-light {
+  background-blend-mode: lighten;
+  background-color: @blend-soft-light-background;
+}
+
+.tm-background-blend-default-light {
+  background-blend-mode: lighten;
+  background-color: @blend-default-light-background;
+}
+
+.tm-background-blend-strong-light {
+  background-blend-mode: lighten;
+  background-color: @blend-strong-light-background;
+}
+
+.uk-background-light {
+  background-color: @global-light-background;
+}

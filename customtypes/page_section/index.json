@@ -1,0 +1,98 @@
+{
+  "id": "page_section",
+  "label": "Page Section",
+  "repeatable": true,
+  "status": true,
+  "format": "custom",
+  "json": {
+    "Main": {
+      "privateKeywords": {
+        "type": "Text",
+        "config": {
+          "label": "Private Keywords",
+          "placeholder": "Enter a few keywords"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "slideshow": {
+              "type": "SharedSlice"
+            },
+            "text_block": {
+              "type": "SharedSlice"
+            },
+            "button_group": {
+              "type": "SharedSlice"
+            },
+            "cards": {
+              "type": "SharedSlice"
+            },
+            "columns": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Background": {
+      "backgroundColor": {
+        "type": "Select",
+        "config": {
+          "label": "Background Color",
+          "placeholder": "",
+          "options": ["white", "primary", "secondary", "muted"],
+          "default_value": "white"
+        }
+      },
+      "backgroundImage": {
+        "type": "Image",
+        "config": {
+          "label": "Background Image",
+          "constraint": {
+            "width": 1920
+          },
+          "thumbnails": []
+        }
+      },
+      "backgroundImageOverlay": {
+        "type": "Select",
+        "config": {
+          "label": "Background Image Overlay",
+          "placeholder": "",
+          "options": ["dark", "light", "none"],
+          "default_value": "dark"
+        }
+      },
+      "background_position": {
+        "type": "Select",
+        "config": {
+          "label": "Background Position",
+          "placeholder": "",
+          "options": ["center", "left", "right"],
+          "default_value": "center"
+        }
+      },
+      "parallaxEffect": {
+        "type": "Boolean",
+        "config": {
+          "label": "Parallax Effect",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false
+        }
+      },
+      "divider": {
+        "type": "Boolean",
+        "config": {
+          "label": "Divider",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      }
+    }
+  }
+}

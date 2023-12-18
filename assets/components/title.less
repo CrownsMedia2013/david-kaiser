@@ -1,0 +1,52 @@
+@subtitle-font-weight: @base-heading-font-weight;
+@subtitle-font-size: @global-small-font-size;
+@subtitle-ratio: -1;
+@subtitle-text-transform: uppercase;
+@subtitle-margin-bottom: line-height(0.5);
+@subtitle-color: @base-heading-color;
+@title-link-hover-color: @link-heading-hover-color;
+@title-link-hover-text-decoration: @link-heading-hover-text-decoration;
+@title-link-transition-duration: @transition-duration;
+@inverse-subtitle-color: @inverse-base-heading-color;
+
+.tm-title {
+  font-family: @base-heading-font-family;
+  font-weight: @base-heading-font-weight;
+  color: @base-heading-color;
+  text-transform: @base-heading-text-transform;
+}
+
+.uk-light .tm-title {
+  color: @inverse-base-heading-color;
+}
+
+.tm-title em {
+  font-style: inherit;
+  color: @global-primary-background;
+}
+
+.tm-subtitle {
+  font-size: @global-small-font-size;
+  font-weight: @subtitle-font-weight;
+  text-transform: @subtitle-text-transform;
+  color: @subtitle-color;
+  margin-bottom: @subtitle-margin-bottom;
+}
+
+.uk-light .tm-subtitle {
+  color: @inverse-subtitle-color;
+}
+
+.tm-subtitle > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tm-title-link > * {
+  transition: color @title-link-transition-duration;
+}
+
+.tm-title-link > *:hover {
+  color: @title-link-hover-color;
+  text-decoration: @title-link-hover-text-decoration;
+}

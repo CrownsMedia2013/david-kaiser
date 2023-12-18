@@ -1,0 +1,32 @@
+@text-lead-font-size: 1.15rem;
+@text-lead-font-style: italic;
+
+@text-highlight-padding-horizontal: 0.15em;
+@text-highlight-background: @global-primary-background;
+@text-highlight-color: @inverse-global-emphasis-color;
+@text-highlight-line-height: 1.5;
+@inverse-text-highlight-background: @inverse-global-emphasis-color;
+@inverse-text-highlight-color: @global-emphasis-color;
+
+.uk-text-lead {
+  font-size: @text-lead-font-size;
+  font-style: @text-lead-font-style;
+}
+
+.tm-text-highlight > * {
+  display: inline;
+  background: @text-highlight-background;
+  color: @inverse-global-emphasis-color;
+  padding: 0 @text-highlight-padding-horizontal;
+  box-decoration-break: clone;
+  line-height: @text-highlight-line-height;
+}
+
+.uk-light .tm-text-highlight > * {
+  background: @inverse-text-highlight-background;
+  color: @global-emphasis-color;
+}
+
+.tm-text-pre {
+  white-space: pre;
+}

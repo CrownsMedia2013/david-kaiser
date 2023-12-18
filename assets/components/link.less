@@ -1,0 +1,16 @@
+@link-heading-hover-color: @global-color;
+@link-heading-transition-duration: @transition-duration;
+@inverse-link-heading-hover-color: @inverse-global-color;
+
+.uk-link-heading, .uk-link-heading > * {
+  transition-duration: @link-heading-transition-duration;
+  transition-property: color;
+}
+
+.uk-link-heading:hover > * {
+  color: @link-heading-hover-color;
+}
+
+.uk-light .uk-link-heading:hover > * {
+  color: @inverse-link-heading-hover-color;
+}

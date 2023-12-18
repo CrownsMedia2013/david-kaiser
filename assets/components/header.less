@@ -1,0 +1,15 @@
+@header-sticky-box-shadow: @global-small-box-shadow;
+
+.tm-header {
+  width: 100%;
+  z-index: 9999;
+  transition: background-color @transition-duration;
+}
+
+.tm-header-sticky {
+  box-shadow: @header-sticky-box-shadow;
+}
+
+.tm-header + .uk-sticky-placeholder {
+  height: 0 !important;
+}

@@ -1,0 +1,260 @@
+{
+  "id": "slideshow",
+  "type": "SharedSlice",
+  "name": "Slideshow",
+  "description": "Slideshow",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Slideshow",
+      "primary": {
+        "color": {
+          "config": {
+            "label": "Color",
+            "placeholder": "Color",
+            "options": [
+              "dark",
+              "light"
+            ],
+            "default_value": "dark"
+          },
+          "type": "Select"
+        },
+        "height": {
+          "config": {
+            "label": "Height",
+            "placeholder": "",
+            "options": [
+              "large",
+              "small",
+              "fullscreen"
+            ],
+            "default_value": "large"
+          },
+          "type": "Select"
+        },
+        "backgroundOverlay": {
+          "config": {
+            "label": "Background Overlay",
+            "placeholder_false": "off",
+            "placeholder_true": "on",
+            "default_value": true
+          },
+          "type": "Boolean"
+        },
+        "parallaxEffect": {
+          "config": {
+            "label": "Parallax Effect",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          },
+          "type": "Boolean"
+        },
+        "kenBurnsEffect": {
+          "config": {
+            "label": "Ken Burns Effect",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          },
+          "type": "Boolean"
+        }
+      },
+      "items": {
+        "backgroundImage": {
+          "config": {
+            "label": "Background Image",
+            "constraint": {
+              "width": 1920
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "subtitle": {
+          "config": {
+            "label": "Subtitle",
+            "placeholder": "Subtitle",
+            "allowTargetBlank": true,
+            "single": "strong,em,heading6"
+          },
+          "type": "StructuredText"
+        },
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": "Title",
+            "allowTargetBlank": true,
+            "single": "heading2,strong,em,heading1"
+          },
+          "type": "StructuredText"
+        },
+        "buttonLabel": {
+          "type": "Text",
+          "config": {
+            "label": "Button Label",
+            "placeholder": "Button Label"
+          }
+        },
+        "buttonLink": {
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "textAlignment": {
+          "config": {
+            "label": "Text Alignment",
+            "placeholder": "Text Alignment",
+            "options": [
+              "center",
+              "left",
+              "right"
+            ],
+            "default_value": "center"
+          },
+          "type": "Select"
+        },
+        "backgroundAlignment": {
+          "config": {
+            "label": "Background Alignment",
+            "placeholder": "Background Alignment",
+            "options": [
+              "center",
+              "left",
+              "right"
+            ],
+            "default_value": "center"
+          },
+          "type": "Select"
+        },
+        "video": {
+          "config": {
+            "label": "Video",
+            "placeholder": "Video",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "textHighlight",
+      "name": "Text Highlight",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Slideshow",
+      "primary": {
+        "color": {
+          "config": {
+            "label": "Color",
+            "placeholder": "Color",
+            "options": [
+              "dark",
+              "light"
+            ],
+            "default_value": "dark"
+          },
+          "type": "Select"
+        },
+        "height": {
+          "config": {
+            "label": "Height",
+            "placeholder": "Height",
+            "options": [
+              "large",
+              "small",
+              "fullscreen"
+            ],
+            "default_value": "large"
+          },
+          "type": "Select"
+        },
+        "backgroundParallax": {
+          "config": {
+            "label": "Background Parallax",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          },
+          "type": "Boolean"
+        },
+        "kenBurnsEffect": {
+          "config": {
+            "label": "Ken Burns Effect",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          },
+          "type": "Boolean"
+        }
+      },
+      "items": {
+        "backgroundImage": {
+          "config": {
+            "label": "Background Image",
+            "constraint": {
+              "width": 1920
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": "Title",
+            "allowTargetBlank": true,
+            "single": "heading1,heading2,strong,em"
+          },
+          "type": "StructuredText"
+        },
+        "textAlignment": {
+          "config": {
+            "label": "Text Alignment",
+            "placeholder": "Text Alignment",
+            "options": [
+              "center",
+              "left",
+              "right"
+            ],
+            "default_value": "center"
+          },
+          "type": "Select"
+        },
+        "backgroundAlignment": {
+          "config": {
+            "label": "Background Alignment",
+            "placeholder": "Background Alignment",
+            "options": [
+              "center",
+              "left",
+              "right"
+            ],
+            "default_value": "center"
+          },
+          "type": "Select"
+        },
+        "video": {
+          "config": {
+            "label": "Video",
+            "placeholder": "Video",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+@button-group-padding-top: 30px; 
+
+// default variation
+.button-group-default-settings() {
+  @button-group-padding-top: 30px;
+  @button-style: secondary small;
+}
+
+.tm-button-group-default {
+  .button-group-default-settings();
+  .button-group-variation();
+}
+
+// icons variation
+.button-group-icons-settings() {
+  .button-group-default-settings();
+}
+
+.tm-button-group-icons {
+  .button-group-icons-settings();
+  .button-group-variation();
+}
+
+// large-variation
+.button-group-large-settings() {
+  .button-group-default-settings();
+  @button-style: secondary;
+}
+
+.button-group-large {
+  .button-group-large-settings();
+  .button-group-variation();
+}
+
+.tm-button-group:not(:first-child) {
+  margin-top: -@slice-padding;
+  padding-top: @button-group-padding-top;
+}
+
+// variation constructor
+.button-group-variation() {
+  .tm-button-group-button {
+    .button(@button-style);
+  }
+}

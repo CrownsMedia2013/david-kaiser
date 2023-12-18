@@ -1,0 +1,91 @@
+@slideshow-small-min-height: 280px;
+@slideshow-small-ratio: (100/3);
+@slideshow-large-min-height: 350px;
+@slideshow-large-ratio: (100/2);
+
+// default-variation
+.slideshow-default-settings() {
+  @button-style: small secondary;
+}
+
+.tm-slideshow-default {
+  .slideshow-default-settings();
+  .slideshow-variation();
+}
+
+// text highlight variation
+.slideshow-text-highlight-settings() {
+  .slideshow-default-settings();
+}
+
+.tm-slideshow-text-highlight {
+  .slideshow-text-highlight-settings();
+  .slideshow-variation();
+}
+
+// global slideshow styles
+.tm-slideshow {
+  padding: 0 !important;
+}
+
+.tm-slideshow .uk-slideshow-items {
+  box-sizing: border-box;
+}
+
+.tm-slideshow-small .uk-slideshow-items {
+  min-height: @slideshow-small-min-height !important;
+  height: @slideshow-small-ratio * 1vw; 
+}
+
+.tm-slideshow-large .uk-slideshow-items {
+  min-height: @slideshow-large-min-height !important;
+  height: @slideshow-large-ratio * 1vw;
+}
+
+.tm-slideshow .uk-slideshow-items {
+  max-height: ~"calc(100vh - @{navbar-nav-item-height})";
+}
+
+.tm-slideshow.tm-transparent-header .uk-slideshow-items {
+  max-height: 100vh;
+}
+
+.tm-slideshow-small.tm-transparent-header .uk-slideshow-items {
+  padding-top: (@navbar-nav-item-height / 2);
+
+  .tm-slideshow-item-content {
+    padding-top: (@navbar-nav-item-height / 2);
+  }
+}
+
+.tm-slideshow-large.tm-transparent-header .uk-slideshow-items {
+  @media screen and (max-width: @breakpoint-large-max) {
+    padding-top: @navbar-nav-item-height;
+
+    .tm-slideshow-item-content {
+      padding-top: (@navbar-nav-item-height / 2);
+    }
+  }
+}
+
+.tm-transparent-header .slideshow-item-content {
+  padding-top: (@navbar-nav-item-height / 2);
+}
+
+.tm-slideshow-button {
+  &:extend(.uk-button-secondary all, .uk-button-small all);
+}
+
+@media (max-width: @breakpoint-small) {
+  [uk-slidenav-previous],
+  [uk-slidenav-next] {
+    margin: 0
+  }
+}
+
+// variation constructor
+.slideshow-variation() {
+  &-button {
+    .button(@button-style);
+  }
+}

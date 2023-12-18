@@ -1,0 +1,37 @@
+
+// default variation
+.cards-default-settings() {
+  @button-style: @default-button-style;
+}
+
+.tm-cards-default {
+  .cards-default-settings();
+  .cards-variation();
+}
+
+// with-icon variation
+.cards-with-icon-settings() {
+  .cards-default-settings();
+  @icon-scale: 1.5;
+  @icon-color: @base-heading-color;
+  @icon-margin: @base-margin-vertical;
+  @inverse-icon-color: @inverse-base-heading-color;
+}
+
+.tm-cards-with-icon {
+  .cards-with-icon-settings();
+  .cards-variation();
+
+  &-icon {
+    margin-top: @icon-margin;
+    margin-bottom: @icon-margin;
+    .modular-scale(@icon-scale);
+  }
+}
+
+// variation constructor
+.cards-variation() {
+  &-button {
+    .button(@button-style);
+  }
+}

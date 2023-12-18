@@ -1,0 +1,51 @@
+@icon-circle-size: 2.5em;
+@icon-circle-font-size: 1.2rem;
+@icon-circle-background: @global-secondary-background;
+@icon-circle-color: @inverse-global-emphasis-color;
+@inverse-icon-circle-background: @inverse-global-emphasis-color;
+@inverse-icon-circle-color: @global-emphasis-color;
+@icon-button-font-size: 1.12rem;
+@icon-button-color: #fff;
+@icon-button-hover-color: #fff;
+@icon-button-size: 2.75rem;
+@icon-button-background: @global-secondary-background;
+@icon-button-hover-background: @button-secondary-hover-background;
+@inverse-icon-button-color: @global-emphasis-color;
+@inverse-icon-button-background: @global-muted-background;
+@inverse-icon-button-hover-color: @global-emphasis-color;
+@inverse-icon-button-hover-background: @inverse-global-emphasis-color;
+@inverse-icon-button-active-color: @global-emphasis-color;
+@inverse-icon-button-active-background: @inverse-global-emphasis-color;
+
+.hook-icon-button {
+  font-size: @icon-button-font-size;
+}
+
+.tm-icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  font-size: @icon-circle-font-size;
+  height: @icon-circle-size;
+  width: @icon-circle-size;
+  background: @icon-circle-background;
+  color: @icon-circle-color;
+}
+
+a:hover .tm-icon-circle,
+a.tm-icon-circle:hover {
+  color: @icon-circle-color;
+  text-decoration: none;
+}
+
+.uk-light .tm-icon-circle {
+  background: @inverse-icon-circle-background;
+  color: @inverse-icon-circle-color;
+}
+
+.uk-light a:hover .tm-icon-circle,
+.uk-light a.tm-icon-circle:hover {
+  color: @inverse-icon-circle-color;
+}

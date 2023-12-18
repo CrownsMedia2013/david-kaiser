@@ -1,0 +1,5 @@
+{
+    "framework": "nuxtjs",
+    "deployPath": "dist",
+    "domain": "sicherheitstechnik.bip.sh"
+}

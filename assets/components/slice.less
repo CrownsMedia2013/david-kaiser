@@ -1,0 +1,24 @@
+
+@slice-padding: @global-medium-margin;
+
+.tm-slice {
+  padding-bottom: @slice-padding;
+}
+
+.tm-slice:first-of-type {
+  padding-top: @section-padding-vertical;
+}
+
+.tm-slice:last-of-type {
+  padding-bottom: @section-padding-vertical;
+}
+
+@media (min-width: @breakpoint-medium) {
+  .tm-slice:first-of-type {
+    padding-top: @section-padding-vertical-m;
+  }
+
+  .tm-slice:last-of-type {
+    padding-bottom: @section-padding-vertical-m;
+  }
+}

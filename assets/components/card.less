@@ -1,0 +1,14 @@
+@card-body-padding-horizontal-l: 20px;
+@card-body-padding-vertical-l: 20px;
+@card-media-max-height: 65vh;
+@card-media-min-height: 45%;
+
+.tm-card-media {
+  position: relative;
+  max-height: @column-media-max-height;
+  padding-bottom: @column-media-min-height;
+}
+
+.tm-card-media > * {
+  margin-bottom: -@column-media-min-height;
+}

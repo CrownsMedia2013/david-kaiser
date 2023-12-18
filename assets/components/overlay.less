@@ -1,0 +1,39 @@
+@overlay-soft-dark-background: rgba(0, 0, 0, 0.18);
+@overlay-default-dark-background: rgba(0, 0, 0, 0.4);
+@overlay-strong-dark-background: rgba(0, 0, 0, 0.7);
+@overlay-soft-light-background: rgba(255, 255, 255, 0.18);
+@overlay-default-light-background: rgba(255, 255, 255, 0.4);
+@overlay-strong-light-background: rgba(255, 255, 255, 0.7);
+
+.tm-overlay {
+  position: absolute;
+  pointer-events: none;
+}
+
+.tm-overlay > * {
+  pointer-events: initial;
+}
+
+.tm-overlay-soft-dark {
+  background-color: @overlay-soft-dark-background;
+}
+
+.tm-overlay-default-dark {
+  background-color: @overlay-default-dark-background;
+}
+
+.tm-overlay-strong-dark {
+  background-color: @overlay-strong-dark-background;
+}
+
+.tm-overlay-soft-light {
+  background-color: @overlay-soft-light-background;
+}
+
+.tm-overlay-default-light {
+  background-color: @overlay-default-light-background;
+}
+
+.tm-overlay-strong-light {
+  background-color: @overlay-strong-light-background;
+}

@@ -1,0 +1,64 @@
+{
+  "id": "header",
+  "label": "Header",
+  "repeatable": true,
+  "status": true,
+  "format": "custom",
+  "json": {
+    "Main": {
+      "privateKeywords": {
+        "type": "Text",
+        "config": {
+          "label": "Private Keywords",
+          "placeholder": "Enter a few keywords"
+        }
+      },
+      "backgroundColor": {
+        "config": {
+          "label": "Background Color",
+          "placeholder": "Background Color",
+          "options": ["light", "primary", "secondary", "muted"],
+          "default_value": "light"
+        },
+        "type": "Select"
+      },
+      "transparent": {
+        "type": "Boolean",
+        "config": {
+          "label": "Transparent",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false
+        }
+      },
+      "sticky": {
+        "type": "Select",
+        "config": {
+          "label": "Sticky",
+          "placeholder": "Sticky",
+          "options": ["false", "permanent", "on scroll up"],
+          "default_value": "false"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": { "choices": { "nav_item": { "type": "SharedSlice" } } }
+      }
+    },
+    "Logo": {
+      "logo": {
+        "config": { "label": "Logo", "constraint": {}, "thumbnails": [] },
+        "type": "Image"
+      },
+      "inverseLogo": {
+        "config": {
+          "label": "Inverse Logo",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      }
+    }
+  }
+}

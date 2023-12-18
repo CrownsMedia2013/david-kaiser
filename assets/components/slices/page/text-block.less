@@ -1,0 +1,114 @@
+
+/*.tm-text-block-title.uk-text-muted > h1 {
+  &:extend(.uk-text-muted all);
+}*/
+
+/*.uk-panel + .tm-text-block-buttons {
+  margin-top: @global-margin;
+}*/
+/*
+.tm-text-block-button {
+  &:extend(.uk-button-secondary all, .uk-button-small all);
+}
+
+.tm-text-block-hero-title .tm-title > * {
+  margin-bottom: 0 !important;
+}
+
+.tm-text-block-side-title .tm-divider-bold {
+  margin-bottom: @base-margin-large-vertical;
+}
+
+@media (min-width: @breakpoint-medium) {
+  .tm-text-block-side-title .tm-divider-bold {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: @breakpoint-medium-max) {
+  .tm-text-block-side-title .uk-grid-divider > .uk-grid-margin::before {
+    display: none;
+  }
+}*/
+
+///////////
+
+// default variation
+.text-block-default-settings() {
+  @button-style: @default-button-style;
+}
+
+.tm-text-block-default {
+  .text-block-default-settings();
+  .text-block-variation();
+}
+
+
+// large variation
+.text-block-large-settings() {
+  .text-block-default-settings();
+}
+
+.tm-text-block-large {
+  .text-block-large-settings();
+  .text-block-variation();
+}
+
+// hero title variation
+.text-block-hero-title-settings() {
+  .text-block-default-settings();
+}
+
+.tm-text-block-hero-title {
+  .text-block-hero-title-settings();
+  .text-block-variation();
+
+  .tm-text-block-hero-title .tm-title > * {
+    margin-bottom: 0 !important;
+  }  
+}
+
+// side title variation
+.text-block-side-title-settings() {
+  .text-block-default-settings();
+}
+
+.tm-text-block-side-title {
+  .text-block-side-title-settings();
+  .text-block-variation();
+
+  .tm-divider-bold {
+    margin-bottom: @base-margin-large-vertical;
+  }
+  
+  @media (min-width: @breakpoint-medium) {
+    & .tm-divider-bold {
+      margin-bottom: 0;
+    }
+  }
+  
+  @media (max-width: @breakpoint-medium-max) {
+    & .uk-grid-divider > .uk-grid-margin::before {
+      display: none;
+    }
+  }
+}
+
+// columns variation
+.text-block-columns-settings() {
+  .text-block-default-settings();
+  @button-style: text;
+}
+
+.tm-text-block-columns {
+  .text-block-columns-settings();
+  .text-block-variation();
+}
+
+// variation constructor
+.text-block-variation() {
+  .tm-text-block-button {
+    .button(@button-style);
+  }
+}
+

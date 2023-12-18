@@ -1,0 +1,110 @@
+{
+  "id": "footer",
+  "label": "Footer",
+  "repeatable": true,
+  "status": true,
+  "format": "custom",
+  "json": {
+    "Main": {
+      "privateKeywords": {
+        "type": "Text",
+        "config": {
+          "label": "Private Keywords",
+          "placeholder": "Enter a few keywords"
+        }
+      },
+      "backgroundColor": {
+        "config": {
+          "label": "Background Color",
+          "placeholder": "Background Color",
+          "options": ["secondary", "primary", "muted", "light"],
+          "default_value": "secondary"
+        },
+        "type": "Select"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "navigation": { "type": "SharedSlice" },
+            "opening_hours": { "type": "SharedSlice" }
+          }
+        }
+      }
+    },
+    "Logo": {
+      "logo": {
+        "type": "Image",
+        "config": { "constraint": {}, "thumbnails": [], "label": "Logo" }
+      },
+      "inverseLogo": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Inverse Logo"
+        }
+      },
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": { "choices": {} }
+      }
+    },
+    "Bottom Navigation": {
+      "bottomNavigation": {
+        "type": "Group",
+        "config": {
+          "label": "Bottom Navigation",
+          "fields": {
+            "label": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Label",
+                "placeholder": "Label",
+                "allowTargetBlank": false,
+                "single": "heading6"
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "Link",
+                "allowTargetBlank": true,
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    },
+    "Social Icons": {
+      "socialIcons": {
+        "type": "Group",
+        "config": {
+          "label": "Social Icons",
+          "fields": {
+            "icon": {
+              "type": "Text",
+              "config": {
+                "label": "Icon - www.iconify.design",
+                "placeholder": "eg. la:twitter"
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "Link",
+                "allowTargetBlank": true,
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

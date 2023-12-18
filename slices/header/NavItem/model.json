@@ -1,0 +1,70 @@
+{
+  "id": "nav_item",
+  "type": "SharedSlice",
+  "name": "NavItem",
+  "description": "NavItem",
+  "variations": [
+    {
+      "id": "link",
+      "name": "Link",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Link",
+      "primary": {
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Label",
+            "placeholder": "Label"
+          }
+        },
+        "link": {
+          "config": {
+            "label": "Link",
+            "placeholder": "Link",
+            "allowTargetBlank": true,
+            "select": null
+          },
+          "type": "Link"
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "dropdown",
+      "name": "Dropdown",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Link",
+      "primary": {
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Label",
+            "placeholder": "Label"
+          }
+        }
+      },
+      "items": {
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Label",
+            "placeholder": "Label"
+          }
+        },
+        "link": {
+          "config": {
+            "label": "Link",
+            "placeholder": "Link",
+            "allowTargetBlank": true,
+            "select": null
+          },
+          "type": "Link"
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

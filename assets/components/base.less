@@ -1,0 +1,43 @@
+@base-heading-font-weight: 600;
+@base-heading-color: #333;
+
+@base-h6-font-size: @global-small-font-size;
+
+@base-margin-large-vertical: 1.5rem;
+
+@base-h5-scale: 0;
+@base-h4-scale: 1;
+@base-h3-scale: 2;
+@base-h2-scale: 3;
+@base-h1-scale: 4;
+
+@base-h2-margin: @base-margin-large-vertical;
+@base-h1-margin: @base-margin-large-vertical;
+
+@base-em-color: inherit;
+
+h5, .uk-h5 { .modular-scale(@base-h5-scale) }
+h4, .uk-h4 { .modular-scale(@base-h4-scale) }
+h3, .uk-h3 { .modular-scale(@base-h3-scale) }
+h2, .uk-h2 { .modular-scale(@base-h2-scale) }
+h1, .uk-h1 { .modular-scale(@base-h1-scale) }
+
+h1, .uk-h1 { margin-bottom: @base-margin-large-vertical }
+h2, .uk-h2 { margin-bottom: @base-margin-large-vertical }
+
+html { 
+  margin: auto;
+  background-color: @global-light-background;
+}
+
+.tm-base-margin {
+  margin-bottom: @base-margin-vertical;
+}
+
+.tm-base-margin-large {
+  margin-bottom: @base-margin-large-vertical;
+}
+
+.tm-base-margin-large:last-child {
+  margin-bottom: 0;
+}

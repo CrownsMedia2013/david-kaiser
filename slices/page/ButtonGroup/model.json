@@ -1,0 +1,117 @@
+{
+  "id": "button_group",
+  "type": "SharedSlice",
+  "name": "Button Group",
+  "description": "Button Group",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Alignment",
+            "placeholder": "",
+            "options": ["center", "left", "right"],
+            "default_value": "center"
+          }
+        }
+      },
+      "items": {
+        "buttonLabel": {
+          "type": "Text",
+          "config": { "label": "Button Label", "placeholder": "Button Label" }
+        },
+        "buttonLink": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "Button Link",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        }
+      }
+    },
+    {
+      "id": "icons",
+      "name": "Icons",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Alignment",
+            "placeholder": "",
+            "options": ["center", "left", "right"],
+            "default_value": "center"
+          }
+        }
+      },
+      "items": {
+        "icon": {
+          "type": "Text",
+          "config": {
+            "label": "Icon - https://iconify.design",
+            "placeholder": "e.g. \"la:home\""
+          }
+        },
+        "buttonLabel": {
+          "type": "Text",
+          "config": { "label": "Button Label", "placeholder": "Button Label" }
+        },
+        "buttonLink": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "Button Link",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        }
+      }
+    },
+    {
+      "id": "large",
+      "name": "Large",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Alignment",
+            "placeholder": "",
+            "options": ["center", "left", "right"],
+            "default_value": "center"
+          }
+        }
+      },
+      "items": {
+        "buttonLabel": {
+          "type": "Text",
+          "config": { "label": "Button Label", "placeholder": "Button Label" }
+        },
+        "buttonLink": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "Button Link",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        }
+      }
+    }
+  ]
+}

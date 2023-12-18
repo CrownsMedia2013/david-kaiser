@@ -1,0 +1,43 @@
+{
+  "id": "opening_hours",
+  "type": "SharedSlice",
+  "name": "OpeningHours",
+  "description": "OpeningHours",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "OpeningHours",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Title",
+            "allowTargetBlank": false,
+            "single": "heading5"
+          }
+        }
+      },
+      "items": {
+        "day": {
+          "type": "Text",
+          "config": {
+            "label": "Day",
+            "placeholder": "Day"
+          }
+        },
+        "time": {
+          "type": "Text",
+          "config": {
+            "label": "Time",
+            "placeholder": "Time"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

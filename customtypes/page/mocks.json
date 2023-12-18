@@ -1,0 +1,79 @@
+[
+  {
+    "name": {
+      "__TYPE__": "StructuredTextContent",
+      "value": [
+        {
+          "type": "heading1",
+          "content": {
+            "text": "Scientist"
+          }
+        }
+      ]
+    },
+    "privateKeywords": {
+      "__TYPE__": "FieldContent",
+      "value": "friend",
+      "type": "Text"
+    },
+    "uid": {
+      "__TYPE__": "UIDContent",
+      "value": "anybody"
+    },
+    "sections": {
+      "__TYPE__": "GroupContentType",
+      "value": [
+        {
+          "__TYPE__": "GroupItemContent",
+          "value": [
+            [
+              "section",
+              {
+                "__TYPE__": "LinkContent",
+                "value": {
+                  "__TYPE__": "DocumentLink",
+                  "id": "mock_document_id"
+                }
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "metaTitle": {
+      "__TYPE__": "FieldContent",
+      "value": "garage",
+      "type": "Text"
+    },
+    "metaDescription": {
+      "__TYPE__": "FieldContent",
+      "value": "been",
+      "type": "Text"
+    },
+    "socialMediaImage": {
+      "__TYPE__": "ImageContent",
+      "origin": {
+        "id": "main",
+        "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?rect=0%2C545%2C6000%2C2910&w=1299&h=630",
+      "width": 1299,
+      "height": 630,
+      "edit": {
+        "zoom": 1,
+        "crop": {
+          "x": 0,
+          "y": 545
+        },
+        "background": "transparent"
+      },
+      "thumbnails": {}
+    },
+    "exclude": {
+      "__TYPE__": "BooleanContent",
+      "value": false
+    }
+  }
+]
