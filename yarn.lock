@@ -2060,9 +2060,9 @@
     vue-i18n "^8.27.2"
 
 "@nuxtjs/prismic@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.npmjs.org/@nuxtjs/prismic/-/prismic-1.4.2.tgz"
-  integrity sha512-gP2OUI7nTww1QMWzrStxHF/AMzcTwTSHcyIkJpm8b5grUmn/WKblYRKhSX3iS6Z5CleTrt784G8570cLTV2maw==
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/prismic/-/prismic-1.5.0.tgz#3667b2b8006b82efd136abcb70290806b5c3a662"
+  integrity sha512-9SZD8RFPtPOfRI8zCUhHihJBxhT0PDce/zk1SqjII3igkKXqrYhjWDC9jaOPqqjukvZCVZDEyFQlgxa79Wsx5Q==
   dependencies:
     "@prismicio/client" "^4.0.0 || ^5.1.0"
     "@prismicio/vue" "^2.1.0"
@@ -2136,20 +2136,13 @@
     uuid "^8.3.2"
 
 "@prismicio/client@^4.0.0 || ^5.1.0":
-  version "5.1.1"
-  resolved "https://registry.npmjs.org/@prismicio/client/-/client-5.1.1.tgz"
-  integrity sha512-0wtQrPZCATBmgLklQYgjSrmz3YtMP+5lHakv30MUVyUez2LVoukhVJWTj1uXwsOz2Yh2xLkAp+PHqTOiUvaM/Q==
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-5.2.0.tgz#d22aac74f8f35c1fd5ad667bb884be55a3861c48"
+  integrity sha512-yKonUV8yj2yu1mC9639VYcRYC6qYb9p5JwP8yaRyxDjLd1ctPDG1CbIHLeWEq7PWgF/ayOhJVvbNZxN2aB8ZdA==
   dependencies:
     cross-fetch "^3.0.6"
 
 "@prismicio/client@^7.1.0":
-  version "7.3.1"
-  resolved "https://registry.npmjs.org/@prismicio/client/-/client-7.3.1.tgz"
-  integrity sha512-9MKR/atr4dIQz8rZsQ4Fe7588qSQF2CYXutYW8O9bJOqlrjvAcC8b1Yvu7AIOksXlxE/aAWPtriQ2JZMiTFjNw==
-  dependencies:
-    imgix-url-builder "^0.0.4"
-
-"@prismicio/client@^7.3.1":
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-7.3.1.tgz#26855d8759d5f424c388bcb14ab0cb4f2bfcd26a"
   integrity sha512-9MKR/atr4dIQz8rZsQ4Fe7588qSQF2CYXutYW8O9bJOqlrjvAcC8b1Yvu7AIOksXlxE/aAWPtriQ2JZMiTFjNw==
@@ -2172,7 +2165,7 @@
 
 "@prismicio/helpers@^1.0.4":
   version "1.2.0"
-  resolved "https://registry.npmjs.org/@prismicio/helpers/-/helpers-1.2.0.tgz"
+  resolved "https://registry.yarnpkg.com/@prismicio/helpers/-/helpers-1.2.0.tgz#7e6c8a2ca469af3c3ff1997b4d8d4eb88ee86cdf"
   integrity sha512-YsOfGgauGeTC5Co8zXvz278Lc/V3fyNaAPTs/y4gGrLmLhYa/eT7+USYvDB9RhKEPhYFnUqBiGWa+3l7BksYOQ==
 
 "@prismicio/mocks@2.0.0", "@prismicio/mocks@^2.0.0-alpha.2":
@@ -2193,7 +2186,7 @@
 
 "@prismicio/richtext@^1.1.0":
   version "1.1.0"
-  resolved "https://registry.npmjs.org/@prismicio/richtext/-/richtext-1.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/@prismicio/richtext/-/richtext-1.1.0.tgz#c8769c3d953ae42854a2aba951e3b2121682b8c7"
   integrity sha512-925JuFiZiIkwu9jmlR9O/U8xCSZk/Y6BQDXKpavoVsKo+n90ml1hGdtWkglIupX+ITQO1ZINyDgUgiY1oG9dsA==
 
 "@prismicio/simulator@^0.1.4":
@@ -2263,9 +2256,9 @@
   integrity sha512-EmuYYil56U+UtEifMD/9TmLzpWliV+X6kypwPq47GNXmIXyFK1JsP3z872fUziXwoBjd2YILj28DNdYXlLOpXg==
 
 "@prismicio/vue@^2.1.0":
-  version "2.1.2"
-  resolved "https://registry.npmjs.org/@prismicio/vue/-/vue-2.1.2.tgz"
-  integrity sha512-hbOiaIjAliB9dsOXM1di5FsZ7KZ0XE60FRhW9WUIpMYxs/ZoebXZJouMKXNsRZZgm+qB5tgJ/IMNN0s0YqAKvw==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@prismicio/vue/-/vue-2.2.0.tgz#17144e0ede2efa5c4818e97eeeef95da0c13396f"
+  integrity sha512-k5WZor+XaNvmwBHbTL1phb/i+9VKNxvFgdaWYJpSqJVUyDaAQeuRFxt1pWuGGKGLsgf/SmiBvN84KX8QkfjZaw==
 
 "@rollup/pluginutils@^5.1.0":
   version "5.1.0"
@@ -4213,11 +4206,11 @@ create-require@^1.1.1:
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
 
 cross-fetch@^3.0.6:
-  version "3.1.5"
-  resolved "https://registry.npmjs.org/cross-fetch/-/cross-fetch-3.1.5.tgz"
-  integrity sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.8.tgz#0327eba65fd68a7d119f8fb2bf9334a1a7956f82"
+  integrity sha512-cvA+JwZoU0Xq+h6WkMvAUqPEYy92Obet6UdKLfW60qn99ftItKjB5T+BkyWOFWe2pUyfQ+IJHmpOTznqk1M6Kg==
   dependencies:
-    node-fetch "2.6.7"
+    node-fetch "^2.6.12"
 
 cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
@@ -8357,10 +8350,17 @@ node-fetch-native@^1.4.0, node-fetch-native@^1.4.1:
   resolved "https://registry.npmjs.org/node-fetch-native/-/node-fetch-native-1.4.1.tgz"
   integrity sha512-NsXBU0UgBxo2rQLOeWNZqS3fvflWePMECr8CoSWoSTqCqGbVVsvl9vZu1HfQicYN0g5piV9Gh8RTEvo/uP752w==
 
-node-fetch@2.6.7, node-fetch@^2.6.1, node-fetch@^2.6.7:
+node-fetch@^2.6.1, node-fetch@^2.6.7:
   version "2.6.7"
   resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz"
   integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
+  dependencies:
+    whatwg-url "^5.0.0"
+
+node-fetch@^2.6.12:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
+  integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
   dependencies:
     whatwg-url "^5.0.0"
 
@@ -9892,7 +9892,7 @@ pretty-time@^1.1.0:
 
 prismic-dom@^2.2.6:
   version "2.2.7"
-  resolved "https://registry.npmjs.org/prismic-dom/-/prismic-dom-2.2.7.tgz"
+  resolved "https://registry.yarnpkg.com/prismic-dom/-/prismic-dom-2.2.7.tgz#a4d36cc4fc92b84f8b46e5a515513c07b5f2f43e"
   integrity sha512-4rJWzBqq/6h15giAzB6L8+eaWLQJrQcM4EAicmtw3mI8DhussbJOgheTeFtTCgvO7e5QEjZA0he5gEbQYfKGmg==
   dependencies:
     "@prismicio/helpers" "^1.0.4"
