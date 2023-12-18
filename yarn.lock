@@ -2149,6 +2149,13 @@
   dependencies:
     imgix-url-builder "^0.0.4"
 
+"@prismicio/client@^7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-7.3.1.tgz#26855d8759d5f424c388bcb14ab0cb4f2bfcd26a"
+  integrity sha512-9MKR/atr4dIQz8rZsQ4Fe7588qSQF2CYXutYW8O9bJOqlrjvAcC8b1Yvu7AIOksXlxE/aAWPtriQ2JZMiTFjNw==
+  dependencies:
+    imgix-url-builder "^0.0.4"
+
 "@prismicio/custom-types-client@^1.1.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@prismicio/custom-types-client/-/custom-types-client-1.1.0.tgz"
