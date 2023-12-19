@@ -1,0 +1,118 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"verticalAlignment": {
+				"__TYPE__": "FieldContent",
+				"value": "top",
+				"type": "Select"
+			},
+			"divider": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+								"width": 5616,
+								"height": 3744
+							},
+							"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+							"width": 5616,
+							"height": 3744,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"imagePosition",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "left",
+							"type": "Select"
+						}
+					],
+					[
+						"subtitle",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading6",
+									"content": {
+										"text": "Substance"
+									}
+								}
+							]
+						}
+					],
+					[
+						"title",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Steep"
+									}
+								}
+							]
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Consectetur non quis eu qui do eiusmod esse occaecat aliqua. Aute esse voluptate proident labore sit nulla commodo anim magna culpa. Non consequat veniam duis ullamco aliqua."
+									}
+								}
+							]
+						}
+					],
+					[
+						"buttonLabel",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "burst",
+							"type": "Text"
+						}
+					],
+					[
+						"buttonLink",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
+						}
+					]
+				]
+			}
+		]
+	}
+]

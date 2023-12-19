@@ -17,6 +17,10 @@ export const components = {
     import(
       /* webpackChunkName: "prismic__slicespage__slideshow" */ "./Slideshow/index.vue"
     ),
+  split: () =>
+    import(
+      /* webpackChunkName: "prismic__slicespage__split" */ "./Split/index.vue"
+    ),
   text_block: () =>
     import(
       /* webpackChunkName: "prismic__slicespage__text_block" */ "./TextBlock/index.vue"

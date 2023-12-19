@@ -1839,6 +1839,136 @@ export type SlideshowSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *Split → Primary*
+ */
+export interface SplitSliceDefaultPrimary {
+  /**
+   * Vertical Alignment field in *Split → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: top
+   * - **API ID Path**: split.primary.verticalAlignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  verticalAlignment: prismic.SelectField<"top" | "middle" | "bottom", "filled">;
+
+  /**
+   * Divider field in *Split → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: split.primary.divider
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  divider: prismic.BooleanField;
+}
+
+/**
+ * Primary content in *Split → Items*
+ */
+export interface SplitSliceDefaultItem {
+  /**
+   * Image field in *Split → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: split.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Image Position field in *Split → Items*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: left
+   * - **API ID Path**: split.items[].imagePosition
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  imagePosition: prismic.SelectField<"left" | "right", "filled">;
+
+  /**
+   * Subtitle field in *Split → Items*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: split.items[].subtitle
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  subtitle: prismic.TitleField;
+
+  /**
+   * Title field in *Split → Items*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: split.items[].title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.TitleField;
+
+  /**
+   * Text field in *Split → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: split.items[].text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  text: prismic.RichTextField;
+
+  /**
+   * Button Label field in *Split → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: split.items[].buttonLabel
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  buttonLabel: prismic.KeyTextField;
+
+  /**
+   * Button Link field in *Split → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: split.items[].buttonLink
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  buttonLink: prismic.LinkField;
+}
+
+/**
+ * Default variation for Split Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type SplitSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<SplitSliceDefaultPrimary>,
+  Simplify<SplitSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Split*
+ */
+type SplitSliceVariation = SplitSliceDefault;
+
+/**
+ * Split Shared Slice
+ *
+ * - **API ID**: `split`
+ * - **Description**: Split
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type SplitSlice = prismic.SharedSlice<"split", SplitSliceVariation>;
+
+/**
  * Primary content in *Text Block → Primary*
  */
 export interface TextBlockSliceDefaultPrimary {
@@ -2616,6 +2746,11 @@ declare module "@prismicio/client" {
       SlideshowSliceVariation,
       SlideshowSliceDefault,
       SlideshowSliceTextHighlight,
+      SplitSlice,
+      SplitSliceDefaultPrimary,
+      SplitSliceDefaultItem,
+      SplitSliceVariation,
+      SplitSliceDefault,
       TextBlockSlice,
       TextBlockSliceDefaultPrimary,
       TextBlockSliceDefaultItem,

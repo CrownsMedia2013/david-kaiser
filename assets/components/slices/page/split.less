@@ -1,0 +1,16 @@
+// default variation
+.split-default-settings() {
+  @button-style: @default-button-style;
+}
+
+.tm-split-default {
+  .split-default-settings();
+  .split-variation();
+}
+
+// variation constructor
+.split-variation() {
+  &-button {
+    .button(@button-style);
+  }
+}
