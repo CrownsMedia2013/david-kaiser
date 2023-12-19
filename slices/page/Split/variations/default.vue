@@ -5,7 +5,7 @@
   >
     <div class="uk-container uk-container-large">
       <div
-        class="uk-grid uk-grid-medium uk-child-width-1-1"
+        class="uk-grid uk-grid-large uk-child-width-1-1"
         :class="{ 'uk-grid-divider': slice.primary.divider }"
         uk-grid
       >

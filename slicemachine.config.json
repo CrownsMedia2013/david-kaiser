@@ -4,6 +4,6 @@
   "adapter": "@slicemachine/adapter-nuxt2",
   "libraries": ["./slices/page", "./slices/header", "./slices/footer"],
   "localSliceSimulatorURL": "http://localhost:3000/slice-simulator",
-  "hostname": "https://sicherheitstechnik.bip.sh",
+  "hostname": "https://koppenhagen-sicherheitstechnik.vercel.app",
   "defaultLocale": "de-de"
 }
