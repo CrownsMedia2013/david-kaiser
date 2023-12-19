@@ -4,7 +4,7 @@
     :class="{ 'uk-light': isInverse }"
   >
     <div class="uk-container uk-container-large">
-      <div class="uk-grid uk-grid-medium uk-child-width-1-1" uḱ-grid>
+      <div class="uk-grid uk-grid-medium uk-child-width-1-1" uk-grid>
         <div v-for="(item, index) in slice.items">
           <div
             class="uk-grid uk-grid-large uk-child-width-1-2@m"

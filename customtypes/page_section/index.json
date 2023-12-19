@@ -27,10 +27,13 @@
             "button_group": {
               "type": "SharedSlice"
             },
+            "columns": {
+              "type": "SharedSlice"
+            },
             "cards": {
               "type": "SharedSlice"
             },
-            "columns": {
+            "split": {
               "type": "SharedSlice"
             }
           }

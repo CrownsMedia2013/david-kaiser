@@ -449,8 +449,9 @@ type PageSectionDocumentDataSlicesSlice =
   | SlideshowSlice
   | TextBlockSlice
   | ButtonGroupSlice
+  | ColumnsSlice
   | CardsSlice
-  | ColumnsSlice;
+  | SplitSlice;
 
 /**
  * Content for Page Section documents
