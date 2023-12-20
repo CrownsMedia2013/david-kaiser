@@ -29,7 +29,14 @@ export default {
   async asyncData({ $prismic, params, store, i18n, redirect }) {
     const lang = i18n.locale
     const uid = params.uid || store.state.prismic.startPageUID || '';
-    const document = await $prismic.api.getByUID('page', uid, { lang });
+    let document = null
+
+    try {
+      document = await $prismic.api.getByUID('page', uid, { lang });
+    } catch (ex) {
+      redirect(404, '/404');
+    }
+
     await store.dispatch('prismic/documentLoad', { document });
 
     if (document && uid) {
@@ -62,9 +69,9 @@ export default {
     hasInverseTransparentHeader() {
       if (!this.hasTransparentHeader) return false
 
-      return this.firstSlice?.slice_type === 'slideshow' && 
+      return this.firstSlice?.slice_type === 'slideshow' &&
         this.$isInverseColor(this.firstSlice.data?.color || 'dark') ||
-        this.firstSection && 
+        this.firstSection &&
         this.$isInverseColor(this.firstSection.data.backgroundColor)
     }
   },
