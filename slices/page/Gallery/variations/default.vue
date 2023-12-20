@@ -12,7 +12,7 @@
               :style="{
                 backgroundImage: `url(${$img(item.image.url, { w: 650 })}`,
               }"
-              :href="$img(item.image, { mw: 2000 })"
+              :href="$img(item.image.url, { mw: 2000 })"
             ></a>
           </div>
         </div>
