@@ -28,8 +28,8 @@ export default {
     const primary = this.slice.primary
     primary.color = primary.color || 'dark'
     primary.height = primary.height || 'large'
-    primary.backgroundOverlay = primary.backgroundOvay === undefined || primary.backgroundOverlay
-    primary.parallaxEffect= primary.parallaxEffect|| false;
+    primary.backgroundOverlay = primary.backgroundOverlay === undefined || primary.backgroundOverlay
+    primary.parallaxEffect= primary.parallaxEffect || false
 
     let slideshowOptions = 'autoplay: true; ratio: false; max-height: false;'
 

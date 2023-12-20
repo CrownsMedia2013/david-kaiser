@@ -72,8 +72,5 @@ export default {
       required: true,
     }
   },
-  mounted() {
-    console.log(this.card.image.url)
-  }
 }
 </script>

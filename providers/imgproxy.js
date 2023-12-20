@@ -12,9 +12,25 @@ export const getImage = (
     return ''
   }
 
+  const field = modifiers.field
+  const dimensions = field?.dimensions
+  src = field?.url || src
+
   if (!baseURL) {
     // also support runtime config 
     // baseURL = useRuntimeConfig().public.siteUrl
+  }
+
+  console.log('imgproxy.modifiers', modifiers)
+
+  if (modifiers.mw && dimensions) {
+    modifiers.w = dimensions.width > modifiers.mw ? modifiers.mw : dimensions.width
+    delete modifiers.mw
+  }
+
+  if (modifiers.mh && dimensions) {
+    modifiers.h = dimensions.height > modifiers.mh ? modifiers.mh : dimensions.height
+    delete modifiers.mh
   }
 
   let operations = operationsGenerator(modifiers)

@@ -13,6 +13,10 @@ export const components = {
     import(
       /* webpackChunkName: "prismic__slicespage__columns" */ "./Columns/index.vue"
     ),
+  gallery: () =>
+    import(
+      /* webpackChunkName: "prismic__slicespage__gallery" */ "./Gallery/index.vue"
+    ),
   slideshow: () =>
     import(
       /* webpackChunkName: "prismic__slicespage__slideshow" */ "./Slideshow/index.vue"

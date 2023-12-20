@@ -1536,6 +1536,98 @@ export type ColumnsSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *Gallery → Primary*
+ */
+export interface GallerySliceDefaultPrimary {
+  /**
+   * Alignment field in *Gallery → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: center
+   * - **API ID Path**: gallery.primary.alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  alignment: prismic.SelectField<"center" | "left" | "right", "filled">;
+
+  /**
+   * Slider field in *Gallery → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: gallery.primary.slider
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  slider: prismic.BooleanField;
+
+  /**
+   * Image Ratio (%) field in *Gallery → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: 80%
+   * - **API ID Path**: gallery.primary.imageRatio
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  imageRatio: prismic.NumberField;
+}
+
+/**
+ * Primary content in *Gallery → Items*
+ */
+export interface GallerySliceDefaultItem {
+  /**
+   * Image field in *Gallery → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gallery.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Label field in *Gallery → Items*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gallery.items[].label
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  label: prismic.TitleField;
+}
+
+/**
+ * Default variation for Gallery Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type GallerySliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<GallerySliceDefaultPrimary>,
+  Simplify<GallerySliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Gallery*
+ */
+type GallerySliceVariation = GallerySliceDefault;
+
+/**
+ * Gallery Shared Slice
+ *
+ * - **API ID**: `gallery`
+ * - **Description**: Gallery
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type GallerySlice = prismic.SharedSlice<
+  "gallery",
+  GallerySliceVariation
+>;
+
+/**
  * Primary content in *Slideshow → Primary*
  */
 export interface SlideshowSliceDefaultPrimary {
@@ -2739,6 +2831,11 @@ declare module "@prismicio/client" {
       ColumnsSliceDefault,
       ColumnsSliceWithIcon,
       ColumnsSliceText,
+      GallerySlice,
+      GallerySliceDefaultPrimary,
+      GallerySliceDefaultItem,
+      GallerySliceVariation,
+      GallerySliceDefault,
       SlideshowSlice,
       SlideshowSliceDefaultPrimary,
       SlideshowSliceDefaultItem,

@@ -9,7 +9,7 @@
         :class="{ 'uk-grid-divider': slice.primary.divider }"
         uk-grid
       >
-        <div v-for="(item, index) in slice.items">
+        <div v-for="(item, index) in slice.items" :key="index">
           <div
             class="uk-grid uk-grid-large uk-child-width-1-2@m"
             :class="[
