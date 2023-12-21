@@ -47,6 +47,11 @@ export default {
         return false
       }
     },
+  },
+  methods: {
+    isLinkActive(link) {
+      return this.$prismic.asLink(link) === this.$nuxt.$route.path
+    }
   }
 }
 </script>
