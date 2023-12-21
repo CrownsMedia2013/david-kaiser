@@ -11,7 +11,7 @@
       <ul class="uk-nav uk-navbar-dropdown-nav">
         <li
           v-for="(item, index) in slice.items"
-          :class="{ 'uk-active': isActive }"
+          :class="{ 'uk-active': isLinkActive(item.link) }"
           :key="index"
         >
           <DocumentLink :field="item.link">

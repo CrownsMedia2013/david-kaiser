@@ -50,6 +50,7 @@ export default {
   },
   methods: {
     isLinkActive(link) {
+      console.log("isLinkActive", this.$prismic.asLink(link), this.$nuxt.$route.path, this.$prismic.asLink(link) === this.$nuxt.$route.path)
       return this.$prismic.asLink(link) === this.$nuxt.$route.path
     }
   }
