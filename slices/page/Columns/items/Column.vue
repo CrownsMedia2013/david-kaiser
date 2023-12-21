@@ -1,12 +1,14 @@
 <template>
   <div class="tm-column" :class="{ 'uk-light': this.isInverse }">
-    <div
-      class="tm-column-media uk-cover-container"
-    >
+    <div class="tm-column-media uk-cover-container">
       <div :style="{ paddingBottom: `${slice.primary.imageRatio}%` }">
         <div
           class="uk-position-cover uk-background-center uk-background-cover"
-          :style="{ backgroundImage: `url(${$img(column.image.url, {w: 650})})` }"
+          :style="{
+            backgroundImage: `url(${$prismicImg(column.image, {
+              width: 650,
+            })})`,
+          }"
         ></div>
         <DocumentLink
           v-if="$notEmpty(column.buttonLink)"

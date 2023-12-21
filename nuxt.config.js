@@ -101,6 +101,7 @@ export default async () => {
       { src: '~/plugins/iconify' },
       { src: '~/plugins/inverse-colors' },
       { src: '~/plugins/DocumentLink' },
+      { src: '~/plugins/PrismicImage' },
       { src: '~/plugins/uikit', ssr: false },
       { src: '~/plugins/client-fixes', ssr: false },
       { src: '~/plugins/scroll.js', ssr: false }

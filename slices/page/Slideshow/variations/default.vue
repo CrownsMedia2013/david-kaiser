@@ -30,7 +30,7 @@
             `uk-background-center-${item.backgroundAlignment}`,
             { 'uk-animation-kenburns': slice.primary.kenBurnsEffect },
           ]"
-          :data-src="item.backgroundImage.url"
+          :data-src="$prismicImg(item.backgroundImage, { maxWidth: 1920 })"
           :uk-parallax="primary.parallaxEffect? 'bgy: -165' : ''"
           uk-img="target: !.tm-slideshow"
           ref="image"

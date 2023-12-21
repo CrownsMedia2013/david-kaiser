@@ -14,8 +14,8 @@
 			},
 			"imageRatio": {
 				"__TYPE__": "FieldContent",
-				"value": "44",
-				"type": "Number"
+				"type": "Number",
+				"value": "80"
 			}
 		},
 		"items": [
@@ -60,6 +60,36 @@
 									}
 								}
 							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1535957998253-26ae1ef29506?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHx3b3JrfGVufDB8fHx8MTcwMzExNzUyNXww&ixlib=rb-4.0.3&q=85",
+							"alt": "MacBook Pro",
+							"origin": {
+								"id": "dIMJWLx1YbE",
+								"url": "https://images.unsplash.com/photo-1535957998253-26ae1ef29506?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHx3b3JrfGVufDB8fHx8MTcwMzExNzUyNXww&ixlib=rb-4.0.3&q=85",
+								"width": 3605,
+								"height": 4806
+							},
+							"width": 3605,
+							"height": 4806,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
 						}
 					]
 				]

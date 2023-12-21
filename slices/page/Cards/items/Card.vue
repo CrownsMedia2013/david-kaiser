@@ -10,7 +10,11 @@
       <div :style="{ paddingBottom: `${slice.primary.imageRatio}%` }">
         <div
           class="uk-position-cover uk-background-center uk-background-cover"
-          :style="{ backgroundImage: card.image.url ? `url(${$img(card.image.url, { w: 650 })}` : null }"
+          :style="{
+            backgroundImage: card.image.url
+              ? `url(${$prismicImg(card.image, { width: 650 })}`
+              : null,
+          }"
         ></div>
         <DocumentLink
           v-if="$notEmpty(card.buttonLink)"
