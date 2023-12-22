@@ -21,6 +21,11 @@
 				"__TYPE__": "FieldContent",
 				"value": "17",
 				"type": "Number"
+			},
+			"maxColumns": {
+				"__TYPE__": "FieldContent",
+				"value": "3",
+				"type": "Select"
 			}
 		},
 		"items": [
@@ -227,6 +232,11 @@
 			"slider": {
 				"__TYPE__": "BooleanContent",
 				"value": true
+			},
+			"maxColumns": {
+				"__TYPE__": "FieldContent",
+				"value": "4",
+				"type": "Select"
 			}
 		},
 		"items": [

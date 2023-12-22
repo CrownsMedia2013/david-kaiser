@@ -21,6 +21,7 @@ export default {
     primary.alignment = primary.alignment || 'center'
     primary.color = primary.color || 'white'
     primary.imageRatio = primary.imageRatio || 60
+    primary.maxColumns = primary.maxColumns || 3
 
     return {
       variations,

@@ -921,6 +921,17 @@ export interface CardsSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#number
    */
   imageRatio: prismic.NumberField;
+
+  /**
+   * Max Columns field in *Cards → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: 3
+   * - **API ID Path**: cards.primary.maxColumns
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  maxColumns: prismic.SelectField<"3" | "4", "filled">;
 }
 
 /**
@@ -1040,6 +1051,17 @@ export interface CardsSliceWithIconPrimary {
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
   slider: prismic.BooleanField;
+
+  /**
+   * Max Columns field in *Cards → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: 3
+   * - **API ID Path**: cards.primary.maxColumns
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  maxColumns: prismic.SelectField<"3" | "4", "filled">;
 }
 
 /**

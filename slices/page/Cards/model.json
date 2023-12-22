@@ -53,6 +53,18 @@
             "label": "Image Ratio (%)",
             "placeholder": "60"
           }
+        },
+        "maxColumns": {
+          "type": "Select",
+          "config": {
+            "label": "Max Columns",
+            "placeholder": "",
+            "options": [
+              "3",
+              "4"
+            ],
+            "default_value": "3"
+          }
         }
       },
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
@@ -153,6 +165,18 @@
             "placeholder_false": "false",
             "placeholder_true": "true",
             "default_value": false
+          }
+        },
+        "maxColumns": {
+          "type": "Select",
+          "config": {
+            "label": "Max Columns",
+            "placeholder": "",
+            "options": [
+              "3",
+              "4"
+            ],
+            "default_value": "3"
           }
         }
       },
