@@ -8,6 +8,7 @@
         ? `tm-background-overlay-strong-${document.data.backgroundImageOverlay}`
         : '',
       `uk-background-center-${document.data.backgroundPosition}`, {
+        'tm-transparent-header': document.data.transparentHeader,
         'tm-page-section-divider': document.data.divider,
       }
     ]
