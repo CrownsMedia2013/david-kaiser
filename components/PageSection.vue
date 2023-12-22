@@ -3,6 +3,7 @@
     v-if="slices"
     class="tm-page-section uk-background-cover"
     :class="[
+      `uk-background-${document.data.backgroundColor}`,
       hasBackgroundOverlay
         ? `tm-background-overlay-strong-${document.data.backgroundImageOverlay}`
         : '',

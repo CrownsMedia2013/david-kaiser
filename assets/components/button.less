@@ -25,6 +25,26 @@
   border-radius: @button-rounded-border-raduis;
 }
 
+.tm-button-outline {
+  background: none;
+  color: @base-heading-color;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.uk-light .tm-button-outline {
+  color: @inverse-base-heading-color;
+}
+
+.uk-button-primary.tm-button-outline {
+  border-color: @global-primary-background;
+}
+
+.uk-light .uk-button-primary.tm-button-outline {
+  background: @global-primary-background;
+  color: @inverse-base-heading-color;
+}
+
 .button(@styles) {
   each(@styles, {
     @modifier: @value;

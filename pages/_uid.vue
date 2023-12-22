@@ -69,8 +69,13 @@ export default {
     hasInverseTransparentHeader() {
       if (!this.hasTransparentHeader) return false
 
+      console.log('uid', this.firstSlice?.slice_type === 'slideshow' &&
+        this.$isInverseColor(this.firstSlice.primary?.color || 'light') ||
+        this.firstSection &&
+        this.$isInverseColor(this.firstSection.data.backgroundColor))
+
       return this.firstSlice?.slice_type === 'slideshow' &&
-        this.$isInverseColor(this.firstSlice.data?.color || 'dark') ||
+        this.$isInverseColor(this.firstSlice.primary?.color || 'light') ||
         this.firstSection &&
         this.$isInverseColor(this.firstSection.data.backgroundColor)
     }

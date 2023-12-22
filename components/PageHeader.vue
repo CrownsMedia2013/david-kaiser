@@ -107,6 +107,8 @@ export default {
         this.data.backgroundColor : 'transparent'
     },
     isInverse() {
+      console.log('this.isStickyActive', this.isStickyActive)
+      console.log('invertible.computed.isInverse.call(this)', invertible.computed.isInverse.call(this))
       return !this.isStickyActive && this.$parent.hasInverseTransparentHeader ||
         invertible.computed.isInverse.call(this)
     },
