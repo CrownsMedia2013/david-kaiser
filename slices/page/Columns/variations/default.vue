@@ -6,6 +6,7 @@
         :class="[
           `uk-flex-${slice.primary.alignment}`,
           {
+            'uk-light': isInverse,
             'uk-grid-divider': slice.primary.divider,
             'uk-child-width-1-3@m': slice.primary.maxColumns !== '2',
             'uk-child-width-1-4@l': slice.primary.maxColumns === '4',
