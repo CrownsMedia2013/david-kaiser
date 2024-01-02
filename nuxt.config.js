@@ -16,7 +16,7 @@ export default async () => {
       baseUrl: process.env.BASE_URL || sm.hostname
     },
     // loading screen
-    loading: '~/components/Loading.vue',
+    //loading: '~/components/Loading.vue',
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
       title: 'Koppenhagen',

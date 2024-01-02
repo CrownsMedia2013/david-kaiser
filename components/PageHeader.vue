@@ -108,7 +108,7 @@ export default {
     },
     isInverse() {
       return !this.isStickyActive && this.$parent.hasInverseTransparentHeader ||
-        !this.isTransparent && invertible.computed.isInverse.call(this)
+        (!this.isTransparent || this.isStickyActive) && invertible.computed.isInverse.call(this)
     },
     isTransparent() {
       return this.data.transparent
