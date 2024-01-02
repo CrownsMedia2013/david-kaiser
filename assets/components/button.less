@@ -6,6 +6,9 @@
 @button-text-transform: @base-heading-text-transform;
 @button-rounded-border-raduis: 0.33;
 @button-outline-border-width: 1px;
+@button-outline-default-color: @global-emphasis-color;
+@button-outline-primary-color: @global-emphasis-color;
+@button-outline-secondary-color: @global-emphasis-color;
 
 @inverse-button-primary-color: @global-emphasis-color;
 @inverse-button-secondary-color: @global-emphasis-color;
@@ -34,33 +37,33 @@
   border-style: solid;
 }
 
-.uk-button-outline.uk-button-default {
+.uk-button-outline-default {
   border-color: @button-default-background;
-  color: @global-emphasis-color;
+  color: @button-outline-default-color;
 }
 
-.uk-button-outline.uk-button-default:hover {
+.uk-button-outline-default:hover {
   background-color: @button-default-hover-background;
   color: @inverse-global-emphasis-color;
   border-color: @inverse-global-emphasis-color;
 }
 
-.uk-button-outline.uk-button-primary {
-  border-color: @button-primary-background;
-  color: @button-primary-background;
+.uk-button-outline-primary {
+  border-color: @global-primary-background;
+  color: @button-outline-primary-color;
 }
 
-.uk-button-outline.uk-button-primary:hover {
+.uk-button-outline-primary:hover {
   background-color: @button-primary-hover-background;
   color: @inverse-global-emphasis-color;
 }
 
-.uk-button-outline.uk-button-secondary {
+.uk-button-outline-secondary {
   border-color: @button-secondary-background;
-  color: @global-emphasis-color;
+  color: @button-outline-secondary-color;
 }
 
-.uk-button-outline.uk-button-secondary:hover {
+.uk-button-outline-secondary:hover {
   background-color: @button-secondary-hover-background;
   color: @inverse-global-emphasis-color;
 }

@@ -53,7 +53,7 @@
       <DocumentLink
         v-if="card.buttonLabel"
         :field="card.buttonLink"
-        class="uk-button tm-cards-with-icon-button"
+        class="uk-button tm-cards-default-button"
       >
         {{ card.buttonLabel }}
       </DocumentLink>
