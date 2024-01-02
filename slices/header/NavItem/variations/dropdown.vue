@@ -6,6 +6,7 @@
     <a>
       {{ slice.primary.label }}
       <Icon v-if="!vertical" icon="la:angle-down" />
+      <span v-else uk-nav-parent-icon></span>
     </a>
     <div v-if="!vertical" class="uk-navbar-dropdown">
       <ul class="uk-nav uk-navbar-dropdown-nav">

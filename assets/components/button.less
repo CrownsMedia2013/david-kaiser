@@ -5,6 +5,7 @@
 @button-small-padding-horizontal: line-height(1);
 @button-text-transform: @base-heading-text-transform;
 @button-rounded-border-raduis: 0.33;
+@button-outline-border-width: 1px;
 
 @inverse-button-primary-color: @global-emphasis-color;
 @inverse-button-secondary-color: @global-emphasis-color;
@@ -15,7 +16,7 @@
   font-weight: @button-font-weight;
 }
 
-.tm-button-outline {
+.uk-button-outline {
   background: transparent;
   border-style: solid;
   border-width: 1px;
@@ -25,24 +26,54 @@
   border-radius: @button-rounded-border-raduis;
 }
 
-.tm-button-outline {
-  background: none;
-  color: @base-heading-color;
-  border-width: 1px;
+.uk-button-outline {
+  background-color: transparent;
+  transition-duration: @transition-duration;
+  transition-property: background-color, border-color, color;
+  border-width: @button-outline-border-width;
   border-style: solid;
 }
 
-.uk-light .tm-button-outline {
-  color: @inverse-base-heading-color;
+.uk-button-outline.uk-button-default {
+  border-color: @button-default-background;
+  color: @global-emphasis-color;
 }
 
-.uk-button-primary.tm-button-outline {
-  border-color: @global-primary-background;
+.uk-button-outline.uk-button-default:hover {
+  background-color: @button-default-hover-background;
+  color: @inverse-global-emphasis-color;
+  border-color: @inverse-global-emphasis-color;
 }
 
-.uk-light .uk-button-primary.tm-button-outline {
-  background: @global-primary-background;
-  color: @inverse-base-heading-color;
+.uk-button-outline.uk-button-primary {
+  border-color: @button-primary-background;
+  color: @button-primary-background;
+}
+
+.uk-button-outline.uk-button-primary:hover {
+  background-color: @button-primary-hover-background;
+  color: @inverse-global-emphasis-color;
+}
+
+.uk-button-outline.uk-button-secondary {
+  border-color: @button-secondary-background;
+  color: @global-emphasis-color;
+}
+
+.uk-button-outline.uk-button-secondary:hover {
+  background-color: @button-secondary-hover-background;
+  color: @inverse-global-emphasis-color;
+}
+
+.uk-light .uk-button-outline {
+  background-color: transparent;
+  border-color: @inverse-global-emphasis-color;
+  color: @inverse-global-emphasis-color;
+}
+
+.uk-light .uk-button-outline:hover {
+  background-color: @inverse-global-emphasis-color;
+  color: @global-emphasis-color;
 }
 
 .button(@styles) {
