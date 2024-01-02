@@ -55,7 +55,7 @@ export default {
         `https://api.iconify.design/${prefix}.json?icons=${name}`
       ).then(res => res.json())
 
-      if (!response?.icons[name]) {
+      if (!response?.icons) {
         return
       }
 
