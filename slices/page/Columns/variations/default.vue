@@ -25,7 +25,7 @@
           <ul
             class="uk-slider-items uk-grid uk-grid-match uk-child-width-1-2@s"
             :class="[
-              `uk-flex-${slice.primary.alignment}`,
+              `uk-flex-${slice.primary.alignment}@s`,
               {
                 'uk-grid-divider': slice.primary.divider,
                 'uk-child-width-1-3@m': slice.primary.maxColumns !== '2',
