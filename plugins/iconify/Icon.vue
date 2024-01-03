@@ -80,5 +80,6 @@ export default {
     display: inline-block;
     vertical-align: 'middle';
     width: 1em;
+    min-width: 1em;
   }
 </style>

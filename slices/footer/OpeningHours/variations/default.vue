@@ -4,9 +4,9 @@
       {{ $prismic.asText(slice.primary.title) }}
     </div>
     <table>
-      <tr v-for="(item, index) in slice.items" class="tm-text-pre" :key="index">
-        <td>{{ item.day }}</td>
-        <td>{{ item.time }}</td>
+      <tr v-for="(item, index) in slice.items" :key="index">
+        <td class="tm-text-break">{{ item.day }}</td>
+        <td class="tm-text-break">{{ item.time }}</td>
       </tr>
     </table>
   </div>
