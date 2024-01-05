@@ -2180,7 +2180,7 @@ export interface TextBlockSliceLargePrimary {
    * - **API ID Path**: text_block.primary.alignment
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  alignment: prismic.SelectField<"left" | "right", "filled">;
+  alignment: prismic.SelectField<"left" | "right" | "center", "filled">;
 
   /**
    * Title field in *Text Block → Primary*

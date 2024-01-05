@@ -86,7 +86,8 @@
             "placeholder": "",
             "options": [
               "left",
-              "right"
+              "right",
+              "center"
             ],
             "default_value": "left"
           }

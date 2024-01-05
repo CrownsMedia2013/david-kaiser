@@ -21,11 +21,11 @@
       <DocumentLink
         v-if="$notEmpty(column.buttonLink)"
         :field="column.buttonLink"
-        class="uk-link-reset"
+        class="tm-title uk-link-reset"
       >
         <prismic-rich-text
           v-if="$notEmpty(column.title)"
-          class="tm-title tm-columns-with-icon-subtitle uk-link-heading"
+          class="tm-columns-with-icon-subtitle uk-link-heading"
           :field="column.title"
         ></prismic-rich-text>
       </DocumentLink>

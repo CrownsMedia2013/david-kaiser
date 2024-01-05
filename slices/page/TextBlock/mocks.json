@@ -66,77 +66,6 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "large",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Lorem ipsum dolor sit",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading6",
-						"content": {
-							"text": "At vero eos et accusam",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"text": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Adipisicing Lorem incididunt do nostrud elit deserunt ullamco incididunt ipsum commodo eiusmod ex in consectetur esse."
-						}
-					}
-				]
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"buttonLabel",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "Lorem ipsum"
-						}
-					]
-				]
-			},
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"buttonLabel",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "Dolor sit"
-						}
-					]
-				]
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
 		"variation": "heroTitle",
 		"primary": {
 			"alignment": {
@@ -278,6 +207,82 @@
 								"__TYPE__": "ExternalLink",
 								"url": "https://slicemachine.dev"
 							}
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "large",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Lorem ipsum dolor sit",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading6",
+						"content": {
+							"text": "At vero eos et accusam",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Adipisicing Lorem incididunt do nostrud elit deserunt ullamco incididunt ipsum commodo eiusmod ex in consectetur esse."
+						}
+					}
+				]
+			},
+			"alignment": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "center"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"buttonLabel",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Lorem ipsum"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"buttonLabel",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Dolor sit"
 						}
 					]
 				]
