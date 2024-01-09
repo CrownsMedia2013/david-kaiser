@@ -26,13 +26,13 @@
     <div class="uk-card-body" :class="`uk-text-${slice.primary.alignment}`">
       <prismic-rich-text
         v-if="$notEmpty(card.subtitle)"
-        class="tm-subtitle tm-cards-subtitle"
+        class="tm-subtitle tm-cards-subtitle tm-margin-remove-last"
         :field="card.subtitle"
       />
       <DocumentLink
         v-if="$notEmpty(card.buttonLink)"
         :field="card.buttonLink"
-        class="uk-link-reset"
+        class="uk-link-reset tm-margin-remove-last"
       >
         <prismic-rich-text
           v-if="$notEmpty(card.title)"
@@ -42,12 +42,12 @@
       </DocumentLink>
       <prismic-rich-text
         v-else-if="$notEmpty(card.title)"
-        class="tm-title tm-cards-default-title"
+        class="tm-title tm-cards-default-title tm-margin-remove-last"
         :field="card.title"
       ></prismic-rich-text>
       <prismic-rich-text
         v-if="$notEmpty(card.text)"
-        class="tm-base-margin uk-panel"
+        class="tm-base-margin tm-margin-remove-last"
         :field="card.text"
       />
       <DocumentLink

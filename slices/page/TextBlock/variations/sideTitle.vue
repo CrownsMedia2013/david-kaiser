@@ -28,7 +28,7 @@
           </h6>
           <prismic-rich-text
             v-if="$notEmpty(slice.primary.title)"
-            class="tm-title tm-text-block-title tm-base-margin-large"
+            class="tm-title tm-text-block-title tm-base-margin-large tm-margin-remove-last"
             :field="slice.primary.title"
           />
           <hr
@@ -43,7 +43,7 @@
         <div :class="`uk-text-${sideTitleTextAlign}`">
           <prismic-rich-text
             v-if="$notEmpty(slice.primary.text)"
-            class="tm-base-margin-large"
+            class="tm-base-margin-large tm-margin-remove-lasty"
             :field="slice.primary.text"
           />
           <div

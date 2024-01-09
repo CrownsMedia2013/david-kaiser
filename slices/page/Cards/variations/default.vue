@@ -26,7 +26,7 @@
             </li>
           </ul>
         </div>
-        <div :class="{ 'uk-light': this.isInverse }">
+        <div :class="{ 'uk-light': $parent.isInverse }">
           <a
             href="#"
             class="uk-position-center-left"
@@ -41,7 +41,7 @@
           ></a>
         </div>
       </div>
-      <div :class="{ 'uk-light': this.isInverse }">
+      <div :class="{ 'uk-light': $parent.isInverse }">
         <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-top"></ul>
       </div>
     </div>

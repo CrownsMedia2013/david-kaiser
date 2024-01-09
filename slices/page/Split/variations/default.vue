@@ -31,18 +31,18 @@
             <div>
               <h6
                 v-if="$notEmpty(item.subtitle)"
-                class="tm-subtitle tm-text-block-subtitle"
+                class="tm-subtitle tm-text-block-subtitle tm-margin-remove-last"
               >
                 {{ $prismic.asText(item.subtitle) }}
               </h6>
               <prismic-rich-text
                 v-if="$notEmpty(item.title)"
-                class="tm-title tm-text-block-title"
+                class="tm-title tm-text-block-title tm-margin-remove-last"
                 :field="item.title"
               />
               <prismic-rich-text
                 v-if="$notEmpty(item.text)"
-                class="tm-base-margin uk-panel"
+                class="tm-base-margin tm-margin-remove-last"
                 :field="item.text"
               />
               <DocumentLink

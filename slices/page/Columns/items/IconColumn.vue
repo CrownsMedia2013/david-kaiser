@@ -15,13 +15,13 @@
       </div>
       <prismic-rich-text
         v-if="$notEmpty(column.subtitle)"
-        class="tm-subtitle tm-columns-subtitle"
+        class="tm-subtitle tm-columns-subtitle tm-margin-remove-last"
         :field="column.subtitle"
       />
       <DocumentLink
         v-if="$notEmpty(column.buttonLink)"
         :field="column.buttonLink"
-        class="tm-title uk-link-reset"
+        class="tm-title uk-link-reset tm-margin-remove-last"
       >
         <prismic-rich-text
           v-if="$notEmpty(column.title)"
@@ -31,12 +31,12 @@
       </DocumentLink>
       <prismic-rich-text
         v-else-if="$notEmpty(column.title)"
-        class="tm-title tm-columns-with-icon-title"
+        class="tm-title tm-columns-with-icon-title tm-margin-remove-last"
         :field="column.title"
       ></prismic-rich-text>
       <prismic-rich-text
         v-if="$notEmpty(column.text)"
-        class="tm-base-margin uk-panel"
+        class="tm-base-margin tm-margin-remove-last"
         :field="column.text"
       />
       <DocumentLink

@@ -11,23 +11,23 @@
         <DocumentLink
           v-if="$notEmpty(card.buttonLink)"
           :field="card.buttonLink"
-          class="tm-icon-circle tm-cards-with-icon-icon"
+          class="tm-icon-circle tm-cards-with-icon-icon tm-margin-remove-last"
         >
           <Icon :icon="card.icon" />
         </DocumentLink>
-        <div v-else class="tm-icon-circle tm-cards-with-icon-icon">
+        <div v-else class="tm-icon-circle tm-cards-with-icon-icon tm-margin-remove-last">
           <Icon :icon="card.icon" />
         </div>
       </div>
       <prismic-rich-text
         v-if="$notEmpty(card.subtitle)"
-        class="tm-subtitle tm-cards-subtitle"
+        class="tm-subtitle tm-cards-subtitle tm-margin-remove-last"
         :field="card.subtitle"
       />
       <DocumentLink
         v-if="$notEmpty(card.buttonLink)"
         :field="card.buttonLink"
-        class="uk-link-reset"
+        class="uk-link-reset tm-margin-remove-last"
       >
         <prismic-rich-text
           v-if="$notEmpty(card.title)"
@@ -37,18 +37,18 @@
       </DocumentLink>
       <prismic-rich-text
         v-else-if="$notEmpty(card.title)"
-        class="tm-title tm-cards-default-title"
+        class="tm-title tm-cards-default-title tm-margin-remove-last"
         :field="card.title"
       ></prismic-rich-text>
       <prismic-rich-text
         v-if="$notEmpty(card.text)"
-        class="tm-base-margin uk-panel"
+        class="tm-base-margin tm-margin-remove-last"
         :field="card.text"
       />
       <DocumentLink
         v-if="card.buttonLabel"
         :field="card.buttonLink"
-        class="uk-button tm-cards-with-icon-button"
+        class="uk-button tm-cards-with-icon-button tm-margin-remove-last"
       >
         {{ card.buttonLabel }}
       </DocumentLink>

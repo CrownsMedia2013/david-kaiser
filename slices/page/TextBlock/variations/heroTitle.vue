@@ -9,7 +9,7 @@
     >
       <prismic-rich-text
         v-if="$notEmpty(slice.primary.title)"
-        class="tm-title tm-text-block-title uk-heading-medium uk-panel"
+        class="tm-title tm-text-block-title uk-heading-medium tm-margin-remove-last"
         :class="{
           'uk-text-muted': slice.primary.color === 'muted',
         }"

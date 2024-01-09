@@ -38,6 +38,9 @@ html {
   margin-bottom: @base-margin-large-vertical;
 }
 
-.tm-base-margin-large:last-child {
-  margin-bottom: 0;
+.tm-base-margin,
+.tm-base-margin-large {
+  &:last-child, &:last-child > * {
+    margin-bottom: 0;
+  }
 }

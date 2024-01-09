@@ -20,7 +20,7 @@
     <div class="tm-column-body" :class="`uk-text-${slice.primary.alignment}`">
       <prismic-rich-text
         v-if="$notEmpty(column.subtitle)"
-        class="tm-subtitle tm-columns-subtitle"
+        class="tm-subtitle tm-columns-subtitle tm-margin-remove-last"
         :field="column.subtitle"
       />
       <DocumentLink
@@ -30,18 +30,18 @@
       >
         <prismic-rich-text
           v-if="$notEmpty(column.title)"
-          class="tm-title tm-columns-default-subtitle uk-link-heading"
+          class="tm-title tm-columns-default-subtitle uk-link-heading tm-margin-remove-last"
           :field="column.title"
         ></prismic-rich-text>
       </DocumentLink>
       <prismic-rich-text
         v-else-if="$notEmpty(column.title)"
-        class="tm-title tm-columns-default-title"
+        class="tm-title tm-columns-default-title tm-margin-remove-last"
         :field="column.title"
       ></prismic-rich-text>
       <prismic-rich-text
         v-if="$notEmpty(column.text)"
-        class="tm-base-margin uk-panel"
+        class="tm-base-margin tm-margin-remove-last"
         :field="column.text"
       />
       <DocumentLink
