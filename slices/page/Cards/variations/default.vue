@@ -14,17 +14,17 @@
     <div v-else uk-slider>
       <div class="uk-container uk-container-large uk-position-relative">
         <div class="uk-slider-container">
-          <ul
+          <div
             class="uk-slider-items uk-grid uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m"
             :class="[
               `uk-flex-${slice.primary.alignment}@s`,
               { 'uk-child-width-1-4@l': slice.primary.maxColumns === '4' },
             ]"
           >
-            <li v-for="(item, index) in slice.items" :key="index">
+            <div v-for="(item, index) in slice.items" :key="index">
               <Card :slice="slice" :card="item" />
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
         <div :class="{ 'uk-light': $parent.isInverse }">
           <a

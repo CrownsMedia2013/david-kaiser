@@ -22,7 +22,7 @@
     <div v-else uk-slider>
       <div class="uk-container uk-container-large uk-position-relative">
         <div class="uk-slider-container">
-          <ul
+          <div
             class="uk-slider-items uk-grid uk-grid-match uk-child-width-1-2@s"
             :class="[
               `uk-flex-${slice.primary.alignment}@s`,
@@ -34,10 +34,10 @@
             ]"
             uk-grid
           >
-            <li v-for="(item, index) in slice.items" :key="index">
+            <div v-for="(item, index) in slice.items" :key="index">
               <IconColumn :slice="slice" :column="item" />
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
         <div :class="{ 'uk-light': this.isInverse }">
           <a
