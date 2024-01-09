@@ -681,6 +681,107 @@ export type AllDocumentTypes =
   | SettingsDocument;
 
 /**
+ * Primary content in *Boxes → Primary*
+ */
+export interface BoxesSliceDefaultPrimary {
+  /**
+   * Min Ratio field in *Boxes → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: 75%
+   * - **API ID Path**: boxes.primary.minRatio
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  minRatio: prismic.NumberField;
+}
+
+/**
+ * Primary content in *Boxes → Items*
+ */
+export interface BoxesSliceDefaultItem {
+  /**
+   * Background Color field in *Boxes → Items*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: white
+   * - **API ID Path**: boxes.items[].backgroundColor
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  backgroundColor: prismic.SelectField<
+    "white" | "primary" | "secondary" | "muted",
+    "filled"
+  >;
+
+  /**
+   * Image field in *Boxes → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: boxes.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Subtitle field in *Boxes → Items*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: Subtitle
+   * - **API ID Path**: boxes.items[].subtitle
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  subtitle: prismic.TitleField;
+
+  /**
+   * Title field in *Boxes → Items*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: Title
+   * - **API ID Path**: boxes.items[].title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.TitleField;
+
+  /**
+   * Text field in *Boxes → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Text
+   * - **API ID Path**: boxes.items[].text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  text: prismic.RichTextField;
+}
+
+/**
+ * Default variation for Boxes Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BoxesSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<BoxesSliceDefaultPrimary>,
+  Simplify<BoxesSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Boxes*
+ */
+type BoxesSliceVariation = BoxesSliceDefault;
+
+/**
+ * Boxes Shared Slice
+ *
+ * - **API ID**: `boxes`
+ * - **Description**: Boxes
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BoxesSlice = prismic.SharedSlice<"boxes", BoxesSliceVariation>;
+
+/**
  * Primary content in *Button Group → Primary*
  */
 export interface ButtonGroupSliceDefaultPrimary {
@@ -2823,6 +2924,11 @@ declare module "@prismicio/client" {
       SettingsDocument,
       SettingsDocumentData,
       AllDocumentTypes,
+      BoxesSlice,
+      BoxesSliceDefaultPrimary,
+      BoxesSliceDefaultItem,
+      BoxesSliceVariation,
+      BoxesSliceDefault,
       ButtonGroupSlice,
       ButtonGroupSliceDefaultPrimary,
       ButtonGroupSliceDefaultItem,
