@@ -451,6 +451,7 @@ type PageSectionDocumentDataSlicesSlice =
   | ButtonGroupSlice
   | ColumnsSlice
   | CardsSlice
+  | BoxesSlice
   | SplitSlice;
 
 /**
@@ -700,28 +701,39 @@ export interface BoxesSliceDefaultPrimary {
  */
 export interface BoxesSliceDefaultItem {
   /**
+   * Background Image field in *Boxes → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: boxes.items[].backgroundImage
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  backgroundImage: prismic.ImageField<never>;
+
+  /**
    * Background Color field in *Boxes → Items*
    *
    * - **Field Type**: Select
    * - **Placeholder**: *None*
-   * - **Default Value**: white
+   * - **Default Value**: default
    * - **API ID Path**: boxes.items[].backgroundColor
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   backgroundColor: prismic.SelectField<
-    "white" | "primary" | "secondary" | "muted",
+    "default" | "primary" | "secondary" | "muted",
     "filled"
   >;
 
   /**
-   * Image field in *Boxes → Items*
+   * Background Image Overlay field in *Boxes → Items*
    *
-   * - **Field Type**: Image
+   * - **Field Type**: Boolean
    * - **Placeholder**: *None*
-   * - **API ID Path**: boxes.items[].image
-   * - **Documentation**: https://prismic.io/docs/field#image
+   * - **Default Value**: false
+   * - **API ID Path**: boxes.items[].backgroundImageOverlay
+   * - **Documentation**: https://prismic.io/docs/field#boolean
    */
-  image: prismic.ImageField<never>;
+  backgroundImageOverlay: prismic.BooleanField;
 
   /**
    * Subtitle field in *Boxes → Items*
@@ -752,6 +764,26 @@ export interface BoxesSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   text: prismic.RichTextField;
+
+  /**
+   * Button Label field in *Boxes → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Button Label
+   * - **API ID Path**: boxes.items[].buttonLabel
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  buttonLabel: prismic.KeyTextField;
+
+  /**
+   * Button Link field in *Boxes → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: Button Link
+   * - **API ID Path**: boxes.items[].buttonLink
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  buttonLink: prismic.LinkField;
 }
 
 /**

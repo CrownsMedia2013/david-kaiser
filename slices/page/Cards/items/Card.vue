@@ -3,7 +3,7 @@
     class="uk-card"
     :class="[
       `uk-background-${slice.primary.backgroundColor}`,
-      { 'uk-light': this.isInverse },
+      { 'uk-light': isInverse },
     ]"
   >
     <div class="tm-card-media uk-card-media-top uk-cover-container">

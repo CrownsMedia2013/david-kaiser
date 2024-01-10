@@ -21,26 +21,35 @@
         }
       },
       "items": {
+        "backgroundImage": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
         "backgroundColor": {
           "type": "Select",
           "config": {
             "label": "Background Color",
             "placeholder": "",
             "options": [
-              "white",
+              "default",
               "primary",
               "secondary",
               "muted"
             ],
-            "default_value": "white"
+            "default_value": "default"
           }
         },
-        "image": {
-          "type": "Image",
+        "backgroundImageOverlay": {
+          "type": "Boolean",
           "config": {
-            "label": "Image",
-            "constraint": {},
-            "thumbnails": []
+            "label": "Background Image Overlay",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
           }
         },
         "subtitle": {
@@ -58,7 +67,7 @@
             "label": "Title",
             "placeholder": "Title",
             "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading3"
           }
         },
         "text": {
@@ -68,6 +77,22 @@
             "placeholder": "Text",
             "allowTargetBlank": true,
             "multi": "paragraph,preformatted,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "buttonLabel": {
+          "type": "Text",
+          "config": {
+            "label": "Button Label",
+            "placeholder": "Button Label"
+          }
+        },
+        "buttonLink": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "Button Link",
+            "allowTargetBlank": true,
+            "select": null
           }
         }
       }

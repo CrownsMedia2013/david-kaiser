@@ -14,32 +14,6 @@
 				"__TYPE__": "GroupItemContent",
 				"value": [
 					[
-						"image",
-						{
-							"origin": {
-								"id": "main",
-								"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
-								"width": 4000,
-								"height": 4000
-							},
-							"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
-							"width": 4000,
-							"height": 4000,
-							"edit": {
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								},
-								"background": "transparent"
-							},
-							"credits": null,
-							"alt": null,
-							"__TYPE__": "ImageContent",
-							"thumbnails": {}
-						}
-					],
-					[
 						"subtitle",
 						{
 							"__TYPE__": "StructuredTextContent",
@@ -59,9 +33,9 @@
 							"__TYPE__": "StructuredTextContent",
 							"value": [
 								{
-									"type": "heading2",
+									"type": "heading3",
 									"content": {
-										"text": "Expression"
+										"text": "Buried"
 									}
 								}
 							]
@@ -80,6 +54,65 @@
 								}
 							]
 						}
+					],
+					[
+						"backgroundImage",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+								"width": 3648,
+								"height": 4560
+							},
+							"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+							"width": 3648,
+							"height": 4560,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"backgroundImageOverlay",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
+					],
+					[
+						"backgroundColor",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "default",
+							"type": "Select"
+						}
+					],
+					[
+						"buttonLabel",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Lorem ipsum"
+						}
+					],
+					[
+						"buttonLink",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
+						}
 					]
 				]
 			},
@@ -87,42 +120,15 @@
 				"__TYPE__": "GroupItemContent",
 				"value": [
 					[
-						"image",
-						{
-							"__TYPE__": "ImageContent",
-							"url": "https://images.unsplash.com/photo-1535957998253-26ae1ef29506?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHx3b3JrfGVufDB8fHx8MTcwNDgwNTU1OHww&ixlib=rb-4.0.3&q=85",
-							"alt": "MacBook Pro",
-							"origin": {
-								"id": "dIMJWLx1YbE",
-								"url": "https://images.unsplash.com/photo-1535957998253-26ae1ef29506?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHx3b3JrfGVufDB8fHx8MTcwNDgwNTU1OHww&ixlib=rb-4.0.3&q=85",
-								"width": 3605,
-								"height": 4806
-							},
-							"width": 3605,
-							"height": 4806,
-							"edit": {
-								"background": "transparent",
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								}
-							},
-							"thumbnails": {}
-						}
-					],
-					[
 						"title",
 						{
 							"__TYPE__": "StructuredTextContent",
 							"value": [
 								{
-									"type": "heading2",
+									"type": "heading3",
 									"content": {
-										"text": "Lorem ipsum",
-										"spans": []
-									},
-									"direction": "ltr"
+										"text": "Action"
+									}
 								}
 							]
 						}
@@ -157,6 +163,134 @@
 									"direction": "ltr"
 								}
 							]
+						}
+					],
+					[
+						"backgroundImage",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+								"width": 3199,
+								"height": 3199
+							},
+							"url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+							"width": 3199,
+							"height": 3199,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"backgroundImageOverlay",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": true
+						}
+					],
+					[
+						"backgroundColor",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "default",
+							"type": "Select"
+						}
+					],
+					[
+						"buttonLabel",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Lorem ipsum"
+						}
+					],
+					[
+						"buttonLink",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://google.com"
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Lorem ipsum",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"backgroundColor",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "secondary"
+						}
+					],
+					[
+						"subtitle",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading6",
+									"content": {
+										"text": "Dolor sit amet",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Officia proident ullamco aute exercitation proident fugiat fugiat cupidatat velit proident veniam cillum elit do.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"buttonLabel",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Lorem ipsum"
 						}
 					]
 				]
