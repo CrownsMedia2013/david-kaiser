@@ -16,6 +16,9 @@ export default {
   },
   props: getSliceComponentProps(['slice', 'index', 'slices', 'context']),
   data() {
+    const primary = this.slice.primary
+    primary.imageRatio = primary.imageRatio || 75
+
     return {
       variations,
     }
