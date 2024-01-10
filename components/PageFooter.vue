@@ -13,7 +13,7 @@
     <div class="uk-container uk-container-large">
       <div class="tm-footer-top">
         <div class="uk-grid uk-grid-large" uk-grid>
-          <div v-if="logo" class="tm-footer-logo uk-margin-auto-right">
+          <div v-if="logo.url" class="tm-footer-logo uk-margin-auto-right">
             <NuxtLink to="/">
               <NuxtImg :src="logo.url" :alt="logo.alt" width="500" />
             </NuxtLink>
