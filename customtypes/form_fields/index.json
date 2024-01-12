@@ -1,0 +1,12 @@
+{
+  "id": "form_fields",
+  "label": "Form Fields",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      
+    }
+  }
+}

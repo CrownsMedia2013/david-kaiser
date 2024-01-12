@@ -233,6 +233,24 @@ export type FooterDocument<Lang extends string = string> =
     Lang
   >;
 
+interface FormFieldsDocumentData {}
+
+/**
+ * Form Fields document from Prismic
+ *
+ * - **API ID**: `form_fields`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type FormFieldsDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<FormFieldsDocumentData>,
+    "form_fields",
+    Lang
+  >;
+
 type HeaderDocumentDataSlicesSlice = NavItemSlice;
 
 /**
@@ -676,6 +694,7 @@ export type SettingsDocument<Lang extends string = string> =
 export type AllDocumentTypes =
   | BlogPostDocument
   | FooterDocument
+  | FormFieldsDocument
   | HeaderDocument
   | PageDocument
   | PageSectionDocument
@@ -2925,6 +2944,36 @@ export type OpeningHoursSlice = prismic.SharedSlice<
   OpeningHoursSliceVariation
 >;
 
+/**
+ * Default variation for TextField Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TextFieldSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *TextField*
+ */
+type TextFieldSliceVariation = TextFieldSliceDefault;
+
+/**
+ * TextField Shared Slice
+ *
+ * - **API ID**: `text_field`
+ * - **Description**: TextField
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TextFieldSlice = prismic.SharedSlice<
+  "text_field",
+  TextFieldSliceVariation
+>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -2944,6 +2993,8 @@ declare module "@prismicio/client" {
       FooterDocumentDataSlices1Slice,
       FooterDocumentDataBottomNavigationItem,
       FooterDocumentDataSocialIconsItem,
+      FormFieldsDocument,
+      FormFieldsDocumentData,
       HeaderDocument,
       HeaderDocumentData,
       HeaderDocumentDataSlicesSlice,
@@ -3045,6 +3096,9 @@ declare module "@prismicio/client" {
       OpeningHoursSliceDefaultItem,
       OpeningHoursSliceVariation,
       OpeningHoursSliceDefault,
+      TextFieldSlice,
+      TextFieldSliceVariation,
+      TextFieldSliceDefault,
     };
   }
 }
