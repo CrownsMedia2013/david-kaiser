@@ -837,6 +837,17 @@ export type BoxesSlice = prismic.SharedSlice<"boxes", BoxesSliceVariation>;
  */
 export interface BrandsSliceDefaultPrimary {
   /**
+   * Alignment field in *Brands → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: center
+   * - **API ID Path**: brands.primary.alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  alignment: prismic.SelectField<"center" | "right" | "left", "filled">;
+
+  /**
    * Slider field in *Brands → Primary*
    *
    * - **Field Type**: Boolean
@@ -3012,36 +3023,6 @@ export type OpeningHoursSlice = prismic.SharedSlice<
   OpeningHoursSliceVariation
 >;
 
-/**
- * Default variation for TextField Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type TextFieldSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Record<string, never>,
-  never
->;
-
-/**
- * Slice variation for *TextField*
- */
-type TextFieldSliceVariation = TextFieldSliceDefault;
-
-/**
- * TextField Shared Slice
- *
- * - **API ID**: `text_field`
- * - **Description**: TextField
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type TextFieldSlice = prismic.SharedSlice<
-  "text_field",
-  TextFieldSliceVariation
->;
-
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -3169,9 +3150,6 @@ declare module "@prismicio/client" {
       OpeningHoursSliceDefaultItem,
       OpeningHoursSliceVariation,
       OpeningHoursSliceDefault,
-      TextFieldSlice,
-      TextFieldSliceVariation,
-      TextFieldSliceDefault,
     };
   }
 }

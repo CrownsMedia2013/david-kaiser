@@ -12,6 +12,19 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Alignment",
+            "placeholder": "",
+            "options": [
+              "center",
+              "right",
+              "left"
+            ],
+            "default_value": "center"
+          }
+        },
         "slider": {
           "type": "Boolean",
           "config": {

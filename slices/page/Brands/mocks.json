@@ -6,6 +6,11 @@
 			"slider": {
 				"__TYPE__": "BooleanContent",
 				"value": true
+			},
+			"alignment": {
+				"__TYPE__": "FieldContent",
+				"value": "center",
+				"type": "Select"
 			}
 		},
 		"items": [
@@ -25,7 +30,6 @@
 					[
 						"logo",
 						{
-							"__TYPE__": "ImageContent",
 							"url": "https://images.unsplash.com/photo-1611262588024-d12430b98920?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxpY29ufGVufDB8fHx8MTcwNTA2NTQ2MXww&ixlib=rb-4.0.3&q=85",
 							"alt": "blue and red square logo",
 							"origin": {
@@ -44,6 +48,8 @@
 									"y": 0
 								}
 							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
 							"thumbnails": {}
 						}
 					]
@@ -55,7 +61,6 @@
 					[
 						"logo",
 						{
-							"__TYPE__": "ImageContent",
 							"url": "https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxpY29ufGVufDB8fHx8MTcwNTA2NTQ2MXww&ixlib=rb-4.0.3&q=85",
 							"alt": "green and white apple logo",
 							"origin": {
@@ -74,6 +79,8 @@
 									"y": 0
 								}
 							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
 							"thumbnails": {}
 						}
 					]

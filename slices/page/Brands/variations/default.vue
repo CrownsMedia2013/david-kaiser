@@ -45,6 +45,23 @@
               </div>
             </div>
           </div>
+          <div>
+            <a
+              href="#"
+              class="uk-position-center-left"
+              uk-slidenav-previous
+              uk-slider-item="previous"
+            ></a>
+            <a
+              href="#"
+              class="uk-position-center-right"
+              uk-slidenav-next
+              uk-slider-item="next"
+            ></a>
+          </div>
+        </div>
+        <div :class="{ 'uk-light': $parent.isInverse }">
+          <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-top"></ul>
         </div>
       </div>
     </div>
