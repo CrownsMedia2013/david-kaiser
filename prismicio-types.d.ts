@@ -833,6 +833,74 @@ type BoxesSliceVariation = BoxesSliceDefault;
 export type BoxesSlice = prismic.SharedSlice<"boxes", BoxesSliceVariation>;
 
 /**
+ * Primary content in *Brands → Primary*
+ */
+export interface BrandsSliceDefaultPrimary {
+  /**
+   * Slider field in *Brands → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: brands.primary.slider
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  slider: prismic.BooleanField;
+}
+
+/**
+ * Primary content in *Brands → Items*
+ */
+export interface BrandsSliceDefaultItem {
+  /**
+   * Logo field in *Brands → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: brands.items[].logo
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo: prismic.ImageField<never>;
+
+  /**
+   * Link field in *Brands → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: brands.items[].link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  link: prismic.LinkField;
+}
+
+/**
+ * Default variation for Brands Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BrandsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<BrandsSliceDefaultPrimary>,
+  Simplify<BrandsSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Brands*
+ */
+type BrandsSliceVariation = BrandsSliceDefault;
+
+/**
+ * Brands Shared Slice
+ *
+ * - **API ID**: `brands`
+ * - **Description**: Brands
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BrandsSlice = prismic.SharedSlice<"brands", BrandsSliceVariation>;
+
+/**
  * Primary content in *Button Group → Primary*
  */
 export interface ButtonGroupSliceDefaultPrimary {
@@ -3012,6 +3080,11 @@ declare module "@prismicio/client" {
       BoxesSliceDefaultItem,
       BoxesSliceVariation,
       BoxesSliceDefault,
+      BrandsSlice,
+      BrandsSliceDefaultPrimary,
+      BrandsSliceDefaultItem,
+      BrandsSliceVariation,
+      BrandsSliceDefault,
       ButtonGroupSlice,
       ButtonGroupSliceDefaultPrimary,
       ButtonGroupSliceDefaultItem,

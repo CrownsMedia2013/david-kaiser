@@ -1,0 +1,88 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"slider": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://google.com"
+							}
+						}
+					],
+					[
+						"logo",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1611262588024-d12430b98920?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxpY29ufGVufDB8fHx8MTcwNTA2NTQ2MXww&ixlib=rb-4.0.3&q=85",
+							"alt": "blue and red square logo",
+							"origin": {
+								"id": "71Qk8ODIBko",
+								"url": "https://images.unsplash.com/photo-1611262588024-d12430b98920?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxpY29ufGVufDB8fHx8MTcwNTA2NTQ2MXww&ixlib=rb-4.0.3&q=85",
+								"width": 3200,
+								"height": 2400
+							},
+							"width": 3200,
+							"height": 2400,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"logo",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxpY29ufGVufDB8fHx8MTcwNTA2NTQ2MXww&ixlib=rb-4.0.3&q=85",
+							"alt": "green and white apple logo",
+							"origin": {
+								"id": "_qsuER9xYOY",
+								"url": "https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxpY29ufGVufDB8fHx8MTcwNTA2NTQ2MXww&ixlib=rb-4.0.3&q=85",
+								"width": 3200,
+								"height": 2400
+							},
+							"width": 3200,
+							"height": 2400,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

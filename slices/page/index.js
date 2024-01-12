@@ -5,6 +5,10 @@ export const components = {
     import(
       /* webpackChunkName: "prismic__slicespage__boxes" */ "./Boxes/index.vue"
     ),
+  brands: () =>
+    import(
+      /* webpackChunkName: "prismic__slicespage__brands" */ "./Brands/index.vue"
+    ),
   button_group: () =>
     import(
       /* webpackChunkName: "prismic__slicespage__button_group" */ "./ButtonGroup/index.vue"
