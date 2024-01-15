@@ -249,8 +249,8 @@
 						"backgroundColor",
 						{
 							"__TYPE__": "FieldContent",
-							"type": "Select",
-							"value": "secondary"
+							"value": "transparent",
+							"type": "Select"
 						}
 					],
 					[

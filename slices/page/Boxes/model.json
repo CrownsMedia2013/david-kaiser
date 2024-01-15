@@ -38,7 +38,8 @@
               "default",
               "primary",
               "secondary",
-              "muted"
+              "muted",
+              "transparent"
             ],
             "default_value": "default"
           }

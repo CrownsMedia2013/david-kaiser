@@ -67,6 +67,7 @@ export default {
     isInverse() {
       return this.box.backgroundImage.url && this.box.backgroundColor === 'default'
         || this.isInverseColor(this.box.backgroundColor)
+        || this.box.backgroundColor === 'transparent' && this.slice.$parent.isInverse
     }
   },
 }

@@ -470,7 +470,8 @@ type PageSectionDocumentDataSlicesSlice =
   | ColumnsSlice
   | CardsSlice
   | BoxesSlice
-  | SplitSlice;
+  | SplitSlice
+  | BrandsSlice;
 
 /**
  * Content for Page Section documents
@@ -739,7 +740,7 @@ export interface BoxesSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   backgroundColor: prismic.SelectField<
-    "default" | "primary" | "secondary" | "muted",
+    "default" | "primary" | "secondary" | "muted" | "transparent",
     "filled"
   >;
 

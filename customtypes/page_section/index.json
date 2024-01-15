@@ -38,6 +38,9 @@
             },
             "split": {
               "type": "SharedSlice"
+            },
+            "brands": {
+              "type": "SharedSlice"
             }
           }
         }
