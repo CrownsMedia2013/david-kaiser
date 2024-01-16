@@ -64,17 +64,15 @@ export default {
     },
     section: {
       type: Object,
-    },
+      required: true,
+    }
   },
   computed: {
     isInverse() {
       return this.box.backgroundImage.url && this.box.backgroundColor === 'default'
         || this.isInverseColor(this.box.backgroundColor)
-        || this.box.backgroundColor === 'transparent' && this.section.isInverse
+        || this.box.backgroundColor === 'transparent' && this.$parent.isInverse
     }
   },
-  mounted() {
-    console.log('box.section', this.section)
-  }
 }
 </script>
