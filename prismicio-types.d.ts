@@ -469,6 +469,7 @@ type PageSectionDocumentDataSlicesSlice =
   | ButtonGroupSlice
   | ColumnsSlice
   | CardsSlice
+  | GallerySlice
   | BoxesSlice
   | SplitSlice
   | BrandsSlice;
@@ -1824,6 +1825,17 @@ export interface GallerySliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#number
    */
   imageRatio: prismic.NumberField;
+
+  /**
+   * Max Columns field in *Gallery → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: 3
+   * - **API ID Path**: gallery.primary.maxColumns
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  maxColumns: prismic.SelectField<"3" | "4" | "2", "filled">;
 }
 
 /**
@@ -1841,14 +1853,14 @@ export interface GallerySliceDefaultItem {
   image: prismic.ImageField<never>;
 
   /**
-   * Label field in *Gallery → Items*
+   * Video field in *Gallery → Items*
    *
-   * - **Field Type**: Title
-   * - **Placeholder**: *None*
-   * - **API ID Path**: gallery.items[].label
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   * - **Field Type**: Link
+   * - **Placeholder**: Video
+   * - **API ID Path**: gallery.items[].video
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  label: prismic.TitleField;
+  video: prismic.LinkField;
 }
 
 /**
@@ -1865,9 +1877,85 @@ export type GallerySliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Gallery → Primary*
+ */
+export interface GallerySliceSlideshowPrimary {
+  /**
+   * Alignment field in *Gallery → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: center
+   * - **API ID Path**: gallery.primary.alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  alignment: prismic.SelectField<"center" | "left" | "right", "filled">;
+
+  /**
+   * Slider field in *Gallery → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: gallery.primary.slider
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  slider: prismic.BooleanField;
+
+  /**
+   * Max Columns field in *Gallery → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: 3
+   * - **API ID Path**: gallery.primary.maxColumns
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  maxColumns: prismic.SelectField<"3" | "4" | "2", "filled">;
+}
+
+/**
+ * Primary content in *Gallery → Items*
+ */
+export interface GallerySliceSlideshowItem {
+  /**
+   * Image field in *Gallery → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gallery.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Video field in *Gallery → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: Video
+   * - **API ID Path**: gallery.items[].video
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  video: prismic.LinkField;
+}
+
+/**
+ * Slideshow variation for Gallery Slice
+ *
+ * - **API ID**: `slideshow`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type GallerySliceSlideshow = prismic.SharedSliceVariation<
+  "slideshow",
+  Simplify<GallerySliceSlideshowPrimary>,
+  Simplify<GallerySliceSlideshowItem>
+>;
+
+/**
  * Slice variation for *Gallery*
  */
-type GallerySliceVariation = GallerySliceDefault;
+type GallerySliceVariation = GallerySliceDefault | GallerySliceSlideshow;
 
 /**
  * Gallery Shared Slice
@@ -3100,8 +3188,11 @@ declare module "@prismicio/client" {
       GallerySlice,
       GallerySliceDefaultPrimary,
       GallerySliceDefaultItem,
+      GallerySliceSlideshowPrimary,
+      GallerySliceSlideshowItem,
       GallerySliceVariation,
       GallerySliceDefault,
+      GallerySliceSlideshow,
       SlideshowSlice,
       SlideshowSliceDefaultPrimary,
       SlideshowSliceDefaultItem,

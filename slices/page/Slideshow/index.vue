@@ -10,7 +10,7 @@ const variations = {
 }
 
 export default {
-  name: "slideshow",
+  name: 'slideshow',
   mixins: [slice],
   components: {
     VideoPlayer,

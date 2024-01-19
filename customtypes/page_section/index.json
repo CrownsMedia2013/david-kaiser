@@ -33,6 +33,9 @@
             "cards": {
               "type": "SharedSlice"
             },
+            "gallery": {
+              "type": "SharedSlice"
+            },
             "boxes": {
               "type": "SharedSlice"
             },

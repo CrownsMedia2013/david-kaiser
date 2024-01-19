@@ -5,17 +5,22 @@
 		"primary": {
 			"alignment": {
 				"__TYPE__": "FieldContent",
-				"value": "center",
-				"type": "Select"
+				"type": "Select",
+				"value": "left"
 			},
 			"slider": {
 				"__TYPE__": "BooleanContent",
-				"value": false
+				"value": true
 			},
 			"imageRatio": {
 				"__TYPE__": "FieldContent",
 				"type": "Number",
 				"value": "80"
+			},
+			"maxColumns": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "3"
 			}
 		},
 		"items": [
@@ -49,17 +54,13 @@
 						}
 					],
 					[
-						"label",
+						"video",
 						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "heading6",
-									"content": {
-										"text": "Object"
-									}
-								}
-							]
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://www.youtube.com/watch?v=LXb3EKWsInQ"
+							}
 						}
 					]
 				]
@@ -70,7 +71,6 @@
 					[
 						"image",
 						{
-							"__TYPE__": "ImageContent",
 							"url": "https://images.unsplash.com/photo-1535957998253-26ae1ef29506?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHx3b3JrfGVufDB8fHx8MTcwMzExNzUyNXww&ixlib=rb-4.0.3&q=85",
 							"alt": "MacBook Pro",
 							"origin": {
@@ -89,6 +89,206 @@
 									"y": 0
 								}
 							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"video",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+								"target": ""
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHx3b3JrfGVufDB8fHx8MTcwNTUwMDA5NHww&ixlib=rb-4.0.3&q=85",
+							"alt": "cup of coffee near MacBook Pro",
+							"origin": {
+								"id": "DJ7bWa-Gwks",
+								"url": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHx3b3JrfGVufDB8fHx8MTcwNTUwMDA5NHww&ixlib=rb-4.0.3&q=85",
+								"width": 4827,
+								"height": 3218
+							},
+							"width": 4827,
+							"height": 3218,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHx3b3JrfGVufDB8fHx8MTcwNTUwMDA5NHww&ixlib=rb-4.0.3&q=85",
+							"alt": "person holding notepad and pen flat lay photography",
+							"origin": {
+								"id": "flRm0z3MEoA",
+								"url": "https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHx3b3JrfGVufDB8fHx8MTcwNTUwMDA5NHww&ixlib=rb-4.0.3&q=85",
+								"width": 3024,
+								"height": 4032
+							},
+							"width": 3024,
+							"height": 4032,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8d29ya3xlbnwwfHx8fDE3MDU1MDAwOTR8MA&ixlib=rb-4.0.3&q=85",
+							"alt": "low angle photo of city high rise buildings during daytime",
+							"origin": {
+								"id": "PhYq704ffdA",
+								"url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8d29ya3xlbnwwfHx8fDE3MDU1MDAwOTR8MA&ixlib=rb-4.0.3&q=85",
+								"width": 6000,
+								"height": 4000
+							},
+							"width": 6000,
+							"height": 4000,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "slideshow",
+		"primary": {
+			"alignment": {
+				"__TYPE__": "FieldContent",
+				"value": "center",
+				"type": "Select"
+			},
+			"slider": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"maxColumns": {
+				"__TYPE__": "FieldContent",
+				"value": "3",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+								"width": 3648,
+								"height": 4560
+							},
+							"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+							"width": 3648,
+							"height": 4560,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"video",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1535957998253-26ae1ef29506?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHx3b3JrfGVufDB8fHx8MTcwNTYyNTc4M3ww&ixlib=rb-4.0.3&q=85",
+							"alt": "MacBook Pro",
+							"origin": {
+								"id": "dIMJWLx1YbE",
+								"url": "https://images.unsplash.com/photo-1535957998253-26ae1ef29506?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHx3b3JrfGVufDB8fHx8MTcwNTYyNTc4M3ww&ixlib=rb-4.0.3&q=85",
+								"width": 3605,
+								"height": 4806
+							},
+							"width": 3605,
+							"height": 4806,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
 							"thumbnails": {}
 						}
 					]

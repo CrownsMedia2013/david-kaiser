@@ -40,6 +40,19 @@
             "label": "Image Ratio (%)",
             "placeholder": "80%"
           }
+        },
+        "maxColumns": {
+          "type": "Select",
+          "config": {
+            "label": "Max Columns",
+            "placeholder": "",
+            "options": [
+              "3",
+              "4",
+              "2"
+            ],
+            "default_value": "3"
+          }
         }
       },
       "items": {
@@ -51,13 +64,77 @@
             "thumbnails": []
           }
         },
-        "label": {
-          "type": "StructuredText",
+        "video": {
+          "type": "Link",
           "config": {
-            "label": "Label",
+            "label": "Video",
+            "placeholder": "Video",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        }
+      }
+    },
+    {
+      "id": "slideshow",
+      "name": "Slideshow",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Alignment",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading6"
+            "options": [
+              "center",
+              "left",
+              "right"
+            ],
+            "default_value": "center"
+          }
+        },
+        "slider": {
+          "type": "Boolean",
+          "config": {
+            "label": "Slider",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "maxColumns": {
+          "type": "Select",
+          "config": {
+            "label": "Max Columns",
+            "placeholder": "",
+            "options": [
+              "3",
+              "4",
+              "2"
+            ],
+            "default_value": "3"
+          }
+        }
+      },
+      "items": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "video": {
+          "type": "Link",
+          "config": {
+            "label": "Video",
+            "placeholder": "Video",
+            "allowTargetBlank": false,
+            "select": null
           }
         }
       }

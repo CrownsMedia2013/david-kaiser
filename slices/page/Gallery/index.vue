@@ -5,6 +5,7 @@ import slice from '@/mixins/slice'
 
 const variations = {
   default: require('./variations/default').default,
+  slideshow: require('./variations/slideshow').default,
 }
 
 export default {
@@ -15,6 +16,7 @@ export default {
     const primary = this.slice.primary
     primary.alignment = primary.alignment || 'center'
     primary.imageRatio = primary.imageRatio || 80
+    primary.maxColumns = primary.maxColumns || 3
 
     return {
       variations,
