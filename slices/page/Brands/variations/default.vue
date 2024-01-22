@@ -15,7 +15,7 @@
           :key="index"
           class="uk-flex uk-flex-middle uk-flex-center"
         >
-          <div>
+          <div class="uk-table">
             <DocumentLink :field="brand.link">
               <NuxtImg :src="brand.logo.url" :modifiers="{ mw: 400 }" />
             </DocumentLink>
@@ -37,7 +37,7 @@
                 :key="index"
                 class="uk-flex uk-flex-middle uk-flex-center"
               >
-                <div>
+                <div class="uk-table">
                   <DocumentLink :field="brand.link">
                     <NuxtImg :src="brand.logo.url" :modifiers="{ mw: 400 }" />
                   </DocumentLink>
