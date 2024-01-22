@@ -45,7 +45,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div :class="{ 'uk-light': $parent.isInverse }">
             <a
               href="#"
               class="uk-position-center-left"
@@ -60,7 +60,7 @@
             ></a>
           </div>
         </div>
-        <div :class="{ 'uk-light': $parent.isInverse }">
+        <div :class="{ 'uk-light': isInverse }">
           <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-top"></ul>
         </div>
       </div>
