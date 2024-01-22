@@ -13,9 +13,8 @@
           v-for="(brand, index) in slice.items"
           v-if="brand.logo.url"
           :key="index"
-          class="uk-flex uk-flex-middle uk-flex-center"
         >
-          <div class="uk-table">
+          <div class="uk-flex uk-flex-middle uk-flex-center">
             <DocumentLink :field="brand.link">
               <NuxtImg :src="brand.logo.url" :modifiers="{ mw: 400 }" />
             </DocumentLink>
@@ -35,9 +34,8 @@
                 v-for="(brand, index) in slice.items"
                 v-if="brand.logo.url"
                 :key="index"
-                class="uk-flex uk-flex-middle uk-flex-center"
               >
-                <div class="uk-table">
+                <div class="uk-flex uk-flex-middle uk-flex-center">
                   <DocumentLink :field="brand.link">
                     <NuxtImg :src="brand.logo.url" :modifiers="{ mw: 400 }" />
                   </DocumentLink>
