@@ -13,7 +13,13 @@ const variations = {
 export default {
   name: 'form-field',
   mixins: [slice],
-  props: getSliceComponentProps(['slice', 'index', 'slices', 'context', 'name']),
+  props: {
+    slice: {
+      type: Object,
+      required: true,
+    },
+    name: String,
+  },
   data() {
     const primary = this.slice.primary
     primary.alignment = primary.alignment || 'center'

@@ -22,6 +22,7 @@ export default {
 
     return {
       variations,
+      formFields: [],
     }
   },
   async fetch() {
@@ -30,6 +31,7 @@ export default {
     }
     const response = await this.$prismic.api.getByID(this.slice.primary.formFields.id)
     this.formFields = response?.data?.slices
+    console.log('fetch', this.formFields)
   },
 }
 </script>
