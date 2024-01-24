@@ -43,12 +43,22 @@
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
-        "config": { "choices": { "nav_item": { "type": "SharedSlice" } } }
+        "config": {
+          "choices": {
+            "nav_item": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     },
     "Logo": {
       "logo": {
-        "config": { "label": "Logo", "constraint": {}, "thumbnails": [] },
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        },
         "type": "Image"
       },
       "inverseLogo": {

@@ -1,0 +1,164 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Lorem ipsum *"
+			},
+			"placeholder": {
+				"__TYPE__": "FieldContent",
+				"value": "stand",
+				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Sunt veniam dolor aute in proident id aute sint consequat. Nisi eu ut duis pariatur. Voluptate aliqua officia in adipisicing."
+						}
+					}
+				]
+			},
+			"width": {
+				"__TYPE__": "FieldContent",
+				"value": "full",
+				"type": "Select"
+			},
+			"required": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "select",
+		"primary": {
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "honor",
+				"type": "Text"
+			},
+			"placeholder": {
+				"__TYPE__": "FieldContent",
+				"value": "plus",
+				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Fugiat officia tempor adipisicing consequat duis nulla est nulla incididunt. Nisi duis laborum mollit exercitation enim minim voluptate sunt ad. Incididunt eiusmod incididunt irure veniam et officia minim eiusmod sint magna aliquip."
+						}
+					}
+				]
+			},
+			"width": {
+				"__TYPE__": "FieldContent",
+				"value": "full",
+				"type": "Select"
+			},
+			"required": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"option",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "swam",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "checkbox",
+		"primary": {
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "former",
+				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Et aliqua enim et veniam ullamco laboris voluptate nostrud. Laboris enim deserunt occaecat enim laboris consequat ut incididunt velit ea. Nisi cupidatat excepteur sunt sit amet nulla fugiat duis ea excepteur duis ex anim velit."
+						}
+					}
+				]
+			},
+			"text": {
+				"__TYPE__": "FieldContent",
+				"value": "stepped",
+				"type": "Text"
+			},
+			"required": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "textArea",
+		"primary": {
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "success",
+				"type": "Text"
+			},
+			"placeholder": {
+				"__TYPE__": "FieldContent",
+				"value": "already",
+				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Officia qui dolore proident voluptate anim. Pariatur eu voluptate aliqua reprehenderit ex irure anim aliqua."
+						}
+					}
+				]
+			},
+			"required": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

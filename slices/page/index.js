@@ -21,6 +21,10 @@ export const components = {
     import(
       /* webpackChunkName: "prismic__slicespage__columns" */ "./Columns/index.vue"
     ),
+  contact_form: () =>
+    import(
+      /* webpackChunkName: "prismic__slicespage__contact_form" */ "./ContactForm/index.vue"
+    ),
   gallery: () =>
     import(
       /* webpackChunkName: "prismic__slicespage__gallery" */ "./Gallery/index.vue"

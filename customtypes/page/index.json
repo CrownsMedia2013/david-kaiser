@@ -65,7 +65,10 @@
         "type": "Image",
         "config": {
           "label": "Social Media Image",
-          "constraint": { "width": 1299, "height": 630 },
+          "constraint": {
+            "width": 1299,
+            "height": 630
+          },
           "thumbnails": []
         }
       },

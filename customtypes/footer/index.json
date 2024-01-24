@@ -27,8 +27,12 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "navigation": { "type": "SharedSlice" },
-            "opening_hours": { "type": "SharedSlice" }
+            "navigation": {
+              "type": "SharedSlice"
+            },
+            "opening_hours": {
+              "type": "SharedSlice"
+            }
           }
         }
       }
@@ -36,7 +40,11 @@
     "Logo": {
       "logo": {
         "type": "Image",
-        "config": { "constraint": {}, "thumbnails": [], "label": "Logo" }
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Logo"
+        }
       },
       "inverseLogo": {
         "type": "Image",
@@ -49,7 +57,9 @@
       "slices1": {
         "type": "Slices",
         "fieldset": "Slice Zone",
-        "config": { "choices": {} }
+        "config": {
+          "choices": {}
+        }
       }
     },
     "Bottom Navigation": {

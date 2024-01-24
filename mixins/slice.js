@@ -12,7 +12,7 @@ export default {
       return this.context?.parent.isInverse || 
         ['dark', 'primary', 'secondary'].includes(
           this.slice.primary.backgroundColor
-        );
+        );z
     },
   },
   render() {

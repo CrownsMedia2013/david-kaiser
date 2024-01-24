@@ -6,7 +6,17 @@
   "status": true,
   "json": {
     "Main": {
-      
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "form_field": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1,0 +1,29 @@
+{
+  "id": "contact_form",
+  "type": "SharedSlice",
+  "name": "Contact Form",
+  "description": "ContactForm",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "formFields": {
+          "type": "Link",
+          "config": {
+            "label": "Form Fields",
+            "select": "document",
+            "customtypes": [
+              "form_fields"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

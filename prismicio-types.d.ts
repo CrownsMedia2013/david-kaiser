@@ -233,7 +233,23 @@ export type FooterDocument<Lang extends string = string> =
     Lang
   >;
 
-interface FormFieldsDocumentData {}
+type FormFieldsDocumentDataSlicesSlice = FormFieldSlice;
+
+/**
+ * Content for Form Fields documents
+ */
+interface FormFieldsDocumentData {
+  /**
+   * Slice Zone field in *Form Fields*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: form_fields.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<FormFieldsDocumentDataSlicesSlice>;
+}
 
 /**
  * Form Fields document from Prismic
@@ -472,7 +488,8 @@ type PageSectionDocumentDataSlicesSlice =
   | GallerySlice
   | BoxesSlice
   | SplitSlice
-  | BrandsSlice;
+  | BrandsSlice
+  | ContactFormSlice;
 
 /**
  * Content for Page Section documents
@@ -1788,6 +1805,51 @@ type ColumnsSliceVariation =
 export type ColumnsSlice = prismic.SharedSlice<
   "columns",
   ColumnsSliceVariation
+>;
+
+/**
+ * Primary content in *ContactForm → Primary*
+ */
+export interface ContactFormSliceDefaultPrimary {
+  /**
+   * Form Fields field in *ContactForm → Primary*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_form.primary.formFields
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  formFields: prismic.ContentRelationshipField<"form_fields">;
+}
+
+/**
+ * Default variation for ContactForm Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ContactFormSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ContactFormSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *ContactForm*
+ */
+type ContactFormSliceVariation = ContactFormSliceDefault;
+
+/**
+ * ContactForm Shared Slice
+ *
+ * - **API ID**: `contact_form`
+ * - **Description**: ContactForm
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ContactFormSlice = prismic.SharedSlice<
+  "contact_form",
+  ContactFormSliceVariation
 >;
 
 /**
@@ -3112,6 +3174,300 @@ export type OpeningHoursSlice = prismic.SharedSlice<
   OpeningHoursSliceVariation
 >;
 
+/**
+ * Primary content in *FormField → Primary*
+ */
+export interface FormFieldSliceDefaultPrimary {
+  /**
+   * Label field in *FormField → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Label
+   * - **API ID Path**: form_field.primary.label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  label: prismic.KeyTextField;
+
+  /**
+   * Placeholder field in *FormField → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Placeholder
+   * - **API ID Path**: form_field.primary.placeholder
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  placeholder: prismic.KeyTextField;
+
+  /**
+   * Description field in *FormField → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Description
+   * - **API ID Path**: form_field.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Width field in *FormField → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: full
+   * - **API ID Path**: form_field.primary.width
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  width: prismic.SelectField<"full" | "half", "filled">;
+
+  /**
+   * Required field in *FormField → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: form_field.primary.required
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  required: prismic.BooleanField;
+}
+
+/**
+ * Default variation for FormField Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FormFieldSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<FormFieldSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Primary content in *FormField → Primary*
+ */
+export interface FormFieldSliceSelectPrimary {
+  /**
+   * Label field in *FormField → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Label
+   * - **API ID Path**: form_field.primary.label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  label: prismic.KeyTextField;
+
+  /**
+   * Placeholder field in *FormField → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Placeholder
+   * - **API ID Path**: form_field.primary.placeholder
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  placeholder: prismic.KeyTextField;
+
+  /**
+   * Description field in *FormField → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Description
+   * - **API ID Path**: form_field.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Width field in *FormField → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: full
+   * - **API ID Path**: form_field.primary.width
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  width: prismic.SelectField<"full" | "half", "filled">;
+
+  /**
+   * Required field in *FormField → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: form_field.primary.required
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  required: prismic.BooleanField;
+}
+
+/**
+ * Primary content in *FormField → Items*
+ */
+export interface FormFieldSliceSelectItem {
+  /**
+   * Option field in *FormField → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Option
+   * - **API ID Path**: form_field.items[].option
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  option: prismic.KeyTextField;
+}
+
+/**
+ * Select variation for FormField Slice
+ *
+ * - **API ID**: `select`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FormFieldSliceSelect = prismic.SharedSliceVariation<
+  "select",
+  Simplify<FormFieldSliceSelectPrimary>,
+  Simplify<FormFieldSliceSelectItem>
+>;
+
+/**
+ * Primary content in *FormField → Primary*
+ */
+export interface FormFieldSliceCheckboxPrimary {
+  /**
+   * Label field in *FormField → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Label
+   * - **API ID Path**: form_field.primary.label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  label: prismic.KeyTextField;
+
+  /**
+   * Text field in *FormField → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Text
+   * - **API ID Path**: form_field.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+
+  /**
+   * Description field in *FormField → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Description
+   * - **API ID Path**: form_field.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Required field in *FormField → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: form_field.primary.required
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  required: prismic.BooleanField;
+}
+
+/**
+ * Checkbox variation for FormField Slice
+ *
+ * - **API ID**: `checkbox`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FormFieldSliceCheckbox = prismic.SharedSliceVariation<
+  "checkbox",
+  Simplify<FormFieldSliceCheckboxPrimary>,
+  never
+>;
+
+/**
+ * Primary content in *FormField → Primary*
+ */
+export interface FormFieldSliceTextAreaPrimary {
+  /**
+   * Label field in *FormField → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Label
+   * - **API ID Path**: form_field.primary.label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  label: prismic.KeyTextField;
+
+  /**
+   * Placeholder field in *FormField → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Placeholder
+   * - **API ID Path**: form_field.primary.placeholder
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  placeholder: prismic.KeyTextField;
+
+  /**
+   * Description field in *FormField → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Description
+   * - **API ID Path**: form_field.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Required field in *FormField → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: form_field.primary.required
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  required: prismic.BooleanField;
+}
+
+/**
+ * Text Area variation for FormField Slice
+ *
+ * - **API ID**: `textArea`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FormFieldSliceTextArea = prismic.SharedSliceVariation<
+  "textArea",
+  Simplify<FormFieldSliceTextAreaPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *FormField*
+ */
+type FormFieldSliceVariation =
+  | FormFieldSliceDefault
+  | FormFieldSliceSelect
+  | FormFieldSliceCheckbox
+  | FormFieldSliceTextArea;
+
+/**
+ * FormField Shared Slice
+ *
+ * - **API ID**: `form_field`
+ * - **Description**: FormField
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FormFieldSlice = prismic.SharedSlice<
+  "form_field",
+  FormFieldSliceVariation
+>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -3133,6 +3489,7 @@ declare module "@prismicio/client" {
       FooterDocumentDataSocialIconsItem,
       FormFieldsDocument,
       FormFieldsDocumentData,
+      FormFieldsDocumentDataSlicesSlice,
       HeaderDocument,
       HeaderDocumentData,
       HeaderDocumentDataSlicesSlice,
@@ -3185,6 +3542,10 @@ declare module "@prismicio/client" {
       ColumnsSliceDefault,
       ColumnsSliceWithIcon,
       ColumnsSliceText,
+      ContactFormSlice,
+      ContactFormSliceDefaultPrimary,
+      ContactFormSliceVariation,
+      ContactFormSliceDefault,
       GallerySlice,
       GallerySliceDefaultPrimary,
       GallerySliceDefaultItem,
@@ -3242,6 +3603,17 @@ declare module "@prismicio/client" {
       OpeningHoursSliceDefaultItem,
       OpeningHoursSliceVariation,
       OpeningHoursSliceDefault,
+      FormFieldSlice,
+      FormFieldSliceDefaultPrimary,
+      FormFieldSliceSelectPrimary,
+      FormFieldSliceSelectItem,
+      FormFieldSliceCheckboxPrimary,
+      FormFieldSliceTextAreaPrimary,
+      FormFieldSliceVariation,
+      FormFieldSliceDefault,
+      FormFieldSliceSelect,
+      FormFieldSliceCheckbox,
+      FormFieldSliceTextArea,
     };
   }
 }
