@@ -134,5 +134,11 @@ export default async () => {
     //  exclude: [ '/preview', '**/404', '/slice-simulator' ],
     //  routes: getRoutes
     //}
+
+    optimization: {
+      splitChunks: {
+        maxSize: 300000
+      }
+    }
   }
 }
