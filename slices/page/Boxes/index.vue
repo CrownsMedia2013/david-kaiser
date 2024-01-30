@@ -5,7 +5,7 @@ import slice from '@/mixins/slice'
 import Box from './items/Box'
 
 const variations = {
-  default: async () => import('./variations/default'),
+  default: () => require('./variations/default').default,
 }
 
 export default {
@@ -22,6 +22,9 @@ export default {
     return {
       variations,
     }
+  },
+  computed: {
+   
   },
 }
 </script>

@@ -17,7 +17,7 @@ export default {
   },
   render() {
     if (this.variations) {
-      return this.variations[this.slice.variation].render.apply(this, arguments);
+      return this.variations[this.slice.variation].render?.apply(this, arguments);
     }
   }
 }
