@@ -1,7 +1,7 @@
 import invertible from './invertible';
 
 export default {
-  mixins: [ invertible ],
+  mixins: [invertible],
   data() {
     return {
       primary: this.slice.primary,
@@ -9,15 +9,15 @@ export default {
   },
   computed: {
     isInverse() {
-      return this.context?.parent.isInverse || 
+      return this.context?.parent.isInverse ||
         ['dark', 'primary', 'secondary'].includes(
           this.slice.primary.backgroundColor
-        );z
+        );
     },
   },
   render() {
     if (this.variations) {
-      return this.variations[this.slice.variation].render?.apply(this, arguments);
+      return this.variations[this.slice.variation].render?.apply(this, arguments) || this.variations[this.slice.variation]().render.apply(this, arguments)
     }
   }
 }

@@ -4,10 +4,10 @@ import { getSliceComponentProps } from '@prismicio/vue/components'
 import slice from '@/mixins/slice'
 
 const variations = {
-  default: require('./variations/default').default,
-  large: require('./variations/large').default,
-  heroTitle: require('./variations/heroTitle.vue').default,
-  sideTitle: require('./variations/sideTitle').default,
+  default: () => require('./variations/default').default,
+  large: () => require('./variations/large').default,
+  heroTitle: () => require('./variations/heroTitle.vue').default,
+  sideTitle: () => require('./variations/sideTitle').default,
 }
 
 export default {

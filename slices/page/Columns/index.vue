@@ -8,9 +8,9 @@ import IconColumn from './items/IconColumn'
 import TextColumn from './items/TextColumn'
 
 const variations = {
-  default: require('./variations/default').default,
-  withIcon: require('./variations/withIcon').default,
-  text: require('./variations/text').default,
+  default: () => require('./variations/default').default,
+  withIcon: () => require('./variations/withIcon').default,
+  text: () => require('./variations/text').default,
 }
 
 export default {

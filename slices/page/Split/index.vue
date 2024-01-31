@@ -4,7 +4,7 @@ import { getSliceComponentProps } from '@prismicio/vue/components'
 import slice from '@/mixins/slice'
 
 const variations = {
-  default: require('./variations/default').default,
+  default: () => require('./variations/default').default,
 }
 
 export default {

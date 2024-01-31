@@ -5,8 +5,8 @@ import slice from '@/mixins/slice'
 import VideoPlayer from '@/components/VideoPlayer'
 
 const variations = {
-  default: require('./variations/default').default,
-  textHighlight: require('./variations/textHighlight').default,
+  default: () => require('./variations/default').default,
+  textHighlight: () => require('./variations/textHighlight').default,
 }
 
 export default {

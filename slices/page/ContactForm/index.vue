@@ -6,7 +6,7 @@ import slice from '@/mixins/slice'
 import FormField from '@/slices/form/FormField'
 
 const variations = {
-  default: require('./variations/default').default,
+  default: () => require('./variations/default').default,
 }
 
 export default {
