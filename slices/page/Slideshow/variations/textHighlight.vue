@@ -15,7 +15,7 @@
     <ul
       class="uk-slideshow-items"
       :uk-height-viewport="
-        primary.height === 'fullscreen' ? 'offset-top: true' : false
+        slice.primary.height === 'fullscreen' ? 'offset-top: true' : false
       "
     >
       <li

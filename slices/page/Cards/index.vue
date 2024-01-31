@@ -7,8 +7,8 @@ import IconCard from './items/IconCard'
 
 
 const variations = {
-  default: require('./variations/default').default,
-  withIcon: require('./variations/withIcon').default,
+  default: () => require('./variations/default').default,
+  withIcon: () => require('./variations/withIcon').default,
 }
 
 export default {
