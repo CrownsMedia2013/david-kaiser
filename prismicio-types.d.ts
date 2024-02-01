@@ -240,6 +240,17 @@ type FormFieldsDocumentDataSlicesSlice = FormFieldSlice;
  */
 interface FormFieldsDocumentData {
   /**
+   * Send Button Label field in *Form Fields*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: form_fields.sendButtonLabel
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  sendButtonLabel: prismic.KeyTextField;
+
+  /**
    * Slice Zone field in *Form Fields*
    *
    * - **Field Type**: Slice Zone
@@ -1808,11 +1819,11 @@ export type ColumnsSlice = prismic.SharedSlice<
 >;
 
 /**
- * Primary content in *ContactForm → Primary*
+ * Primary content in *Contact Form → Primary*
  */
 export interface ContactFormSliceDefaultPrimary {
   /**
-   * Form Fields field in *ContactForm → Primary*
+   * Form Fields field in *Contact Form → Primary*
    *
    * - **Field Type**: Content Relationship
    * - **Placeholder**: *None*
@@ -1823,7 +1834,7 @@ export interface ContactFormSliceDefaultPrimary {
 }
 
 /**
- * Default variation for ContactForm Slice
+ * Default variation for Contact Form Slice
  *
  * - **API ID**: `default`
  * - **Description**: Default
@@ -1836,12 +1847,12 @@ export type ContactFormSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
- * Slice variation for *ContactForm*
+ * Slice variation for *Contact Form*
  */
 type ContactFormSliceVariation = ContactFormSliceDefault;
 
 /**
- * ContactForm Shared Slice
+ * Contact Form Shared Slice
  *
  * - **API ID**: `contact_form`
  * - **Description**: ContactForm

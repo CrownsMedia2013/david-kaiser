@@ -12,9 +12,10 @@
         />
         <div class="uk-width-1-1 uk-flex uk-flex-center">
           <input
-            class="uk-button uk-button-primary uk-margin-top"
+            class="uk-button uk-button-primary tm-contact-form-default-button uk-margin-top"
             type="submit"
             ref="submit"
+            :value="slice.primary.sendButtonLabel"
           />
         </div>
       </form>

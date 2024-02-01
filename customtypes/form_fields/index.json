@@ -6,6 +6,13 @@
   "status": true,
   "json": {
     "Main": {
+      "sendButtonLabel": {
+        "type": "Text",
+        "config": {
+          "label": "Send Button Label",
+          "placeholder": ""
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

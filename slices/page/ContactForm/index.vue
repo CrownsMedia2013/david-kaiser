@@ -18,7 +18,8 @@ export default {
   props: getSliceComponentProps(['slice', 'index', 'slices', 'context']),
   data() {
     const primary = this.slice.primary
-    console.log('contact', this.slice.primary)
+    
+    primary.sendButtonLabel = primary.sendButtonLabel || 'Send Message'
 
     return {
       variations,
@@ -31,7 +32,6 @@ export default {
     }
     const response = await this.$prismic.api.getByID(this.slice.primary.formFields.id)
     this.formFields = response?.data?.slices
-    console.log('fetch', this.formFields)
   },
 }
 </script>

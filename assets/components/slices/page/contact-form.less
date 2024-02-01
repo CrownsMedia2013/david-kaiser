@@ -1,0 +1,16 @@
+// default variation
+.contact-form-default-settings() {
+  @button-style: @default-button-style;
+}
+
+.tm-contact-form-default {
+  .split-default-settings();
+  .split-variation();
+}
+
+// variation constructor
+.contact-form-variation() {
+  &-button {
+    .button(@button-style);
+  }
+}
