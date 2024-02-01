@@ -11,6 +11,10 @@ export default async () => {
   return {
     // Target: https://go.nuxtjs.dev/config-target
     target: 'static',
+    // generate every 3 seconds (adjust as needed)
+    generate: {
+      interval: 2000
+    },
     // Enviroment variables
     env: {
       baseUrl: process.env.BASE_URL || sm.hostname
