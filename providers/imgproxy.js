@@ -21,8 +21,6 @@ export const getImage = (
     // baseURL = useRuntimeConfig().public.siteUrl
   }
 
-  console.log('imgproxy.modifiers', modifiers)
-
   if (modifiers.mw && dimensions) {
     modifiers.w = dimensions.width > modifiers.mw ? modifiers.mw : dimensions.width
     delete modifiers.mw

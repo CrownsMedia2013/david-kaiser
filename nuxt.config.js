@@ -10,7 +10,7 @@ export default async () => {
 
   return {
     // Target: https://go.nuxtjs.dev/config-target
-    target: 'server',
+    target: 'static',
     // Enviroment variables
     env: {
       baseUrl: process.env.BASE_URL || sm.hostname
@@ -69,6 +69,13 @@ export default async () => {
           plugins: [ 
             new lessPluginFunctions()
           ]
+        }
+      },
+      terser: {
+        terserOptions: {
+          compress: {
+            drop_console: true
+          }
         }
       }
     },
