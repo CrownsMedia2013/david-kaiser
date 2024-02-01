@@ -54,7 +54,7 @@
           >
             <div
               :class="{ 'uk-width-1-2@m': item.textAlignment !== 'center' }"
-              class="uk-width-3-4 uk-width-1-2@l"
+              class="uk-width-3-4@s uk-width-1-2@l"
             >
               <PrismicRichText
                 v-if="$notEmpty(item.subtitle)"
