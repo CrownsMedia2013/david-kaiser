@@ -5,7 +5,7 @@
   <nuxt-link v-else-if="isNuxtLink" :to="url">
     <slot />
   </nuxt-link>
-  <a v-else :href="url || '#'" :target="field.target" :uk-scroll="isScrolling">
+  <a link-type="document" v-else :href="url || '#'" :target="field.target" :uk-scroll="isScrolling">
     <slot />
   </a>
 </template>
@@ -24,7 +24,9 @@ export default {
       return this.url === this.$nuxt.$route.path
     },
     isNuxtLink() {
-      return this.field.link_type !== 'Web' && !this.url.startsWith('#')
+      return this.field.link_type !== 'Web' 
+        && this.field.link_type !== 'Media' 
+        && !this.url.startsWith('#')
     },
     isScrolling() {
       return /#.+/.test(this.url)
