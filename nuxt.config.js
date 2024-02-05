@@ -13,7 +13,7 @@ export default async () => {
     target: 'static',
     // generate every 3 seconds (adjust as needed)
     generate: {
-      interval: 2000
+      interval: 5000
     },
     // Enviroment variables
     env: {
