@@ -1,9 +1,9 @@
 {
-  "apiEndpoint": "https://koppenhagen-feuerwehrbedarf.prismic.io/api/v2",
-  "repositoryName": "koppenhagen-feuerwehrbedarf",
+  "apiEndpoint": "https://crowns-connect.prismic.io/api/v2",
+  "repositoryName": "crowns-connect",
   "adapter": "@slicemachine/adapter-nuxt2",
   "libraries": ["./slices/page", "./slices/header", "./slices/footer", "./slices/form"],
   "localSliceSimulatorURL": "http://localhost:3000/slice-simulator",
-  "hostname": "https://koppenhagen-feuerwehrbedarf.vercel.app/",
+  "hostname": "https://crowns-connect.vercel.app/",
   "defaultLocale": "de-de"
 }
